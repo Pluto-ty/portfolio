@@ -9,6 +9,22 @@
    </head>
    <body>
       <main>
+         <div class="c-dark-mode">
+            <input
+               class="js-dark-mode"
+               onclick="toggle.switch()"
+               type="checkbox"
+               id="switch"
+            />
+            <label for="switch">
+               <img
+                  class="c-moon-icon"
+                  src="./assets/fases-da-lua.svg"
+                  alt=""
+               />
+               <img class="c-sun-icon" src="./assets/sun.svg" alt="" />
+            </label>
+         </div>
          <section class="c-projects-container">
             <div class="c-project-options">
                <a href="./index.html" class="u-button"> Home</a>
@@ -16,24 +32,66 @@
                <a href="./contact.html" class="u-button">Contacts</a>
             </div>
             <div class="u-project">
-               <img class="u-img-project" src="./assets/projects.jpg" alt="" />
+               <img class="u-img-project" src="./assets/web.png" alt="" />
                <hr />
-               <h2 class="u-project-title">Project 1</h2>
-               <ul class="u-project-buttons-container">
-                  <li class="u-project-buttons">Repo</li>
-                  <li class="u-project-buttons">Demo</li>
-               </ul>
+               <h2 class="u-project-title">Site para controle financeiro</h2>
+               <div class="u-project-buttons-container">
+                  <a
+                     href="https://github.com/Pluto-ty/Maratona-Discover"
+                     class="u-button"
+                     target="_blank"
+                     >Repo</a
+                  >
+                  <a
+                     href="https://pluto-ty.github.io/Maratona-Discover/"
+                     target="_blank"
+                     class="u-button"
+                     >Demo</a
+                  >
+               </div>
             </div>
             <div class="u-project">
-               <img class="u-img-project" src="./assets/projects.jpg" alt="" />
+               <img class="u-img-project" src="./assets/home (1).png" alt="" />
                <hr />
-               <h2 class="u-project-title">Project 1</h2>
-               <ul class="u-project-buttons-container">
-                  <li class="u-project-buttons">Repo</li>
-                  <li class="u-project-buttons">Demo</li>
-               </ul>
+               <h2 class="u-project-title">
+                  Land Page sobre guia de caminhada
+               </h2>
+               <div class="u-project-buttons-container">
+                  <a
+                     href="https://github.com/Pluto-ty/A-Hiking-Guide"
+                     target="_blank"
+                     class="u-button"
+                     >Repo</a
+                  >
+                  <a
+                     href="https://pluto-ty.github.io/A-Hiking-Guide/"
+                     target="_blank"
+                     class="u-button"
+                     >Demo</a
+                  >
+               </div>
+            </div>
+            <div class="u-project">
+               <img class="u-img-project" src="./assets/home.png" alt="" />
+               <hr />
+               <h2 class="u-project-title">Projeto em FlexBox</h2>
+               <div class="u-project-buttons-container">
+                  <a
+                     href="https://github.com/Pluto-ty/FlexBlog"
+                     target="_blank"
+                     class="u-button"
+                     >Repo</a
+                  >
+                  <a
+                     href="https://pluto-ty.github.io/FlexBlog/"
+                     target="_blank"
+                     class="u-button"
+                     >Demo</a
+                  >
+               </div>
             </div>
          </section>
       </main>
+      <script src="script.js"></script>
    </body>
 </html>

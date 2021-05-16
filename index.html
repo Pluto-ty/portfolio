@@ -9,7 +9,22 @@
    </head>
    <body>
       <main>
-         <input type="checkbox" />
+         <div class="c-dark-mode">
+            <input
+               class="js-dark-mode"
+               onclick="toggle.switch()"
+               type="checkbox"
+               id="switch"
+            />
+            <label for="switch"
+               ><img
+                  class="c-moon-icon"
+                  src="./assets/fases-da-lua.svg"
+                  alt=""
+               />
+               <img class="c-sun-icon" src="./assets/sun.svg" alt="" />
+            </label>
+         </div>
          <section class="c-container-geral">
             <div class="c-about-container">
                <img
@@ -32,5 +47,6 @@
             </div>
          </section>
       </main>
+      <script src="./script.js"></script>
    </body>
 </html>

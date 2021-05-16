@@ -1,5 +1,13 @@
-/* REGRAS GERAIS */
+/* ================= REGRAS GERAIS ================= */
+:root {
+   --body-bg: #eeeeee;
+   --letter-color: black;
+}
 
+.dark-mode:root {
+   --body-bg: rgb(61, 55, 85);
+   --letter-color: white;
+}
 * {
    margin: 0;
    padding: 0;
@@ -9,10 +17,9 @@
 }
 
 body {
-   background-color: rgb(61, 55, 85);
+   background: var(--body-bg);
 }
-
-/* UTILITÁRIOS */
+/* ================= UTILITÁRIOS ================= */
 
 .u-button {
    background: rgb(74, 52, 158);
@@ -21,7 +28,64 @@ body {
    border-radius: 0.25rem;
 }
 
-/* INDEX/HOME */
+/* ================= INDEX/HOME ================= */
+
+input[type="checkbox"] {
+   height: 0;
+   width: 0;
+   visibility: hidden;
+}
+
+label {
+   display: flex;
+   cursor: pointer;
+   text-indent: -99999px;
+   width: 60px;
+   height: 30px;
+   background: grey;
+   margin: auto;
+   border-radius: 100px;
+   position: relative;
+}
+
+label::after {
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 3px;
+   width: 25px;
+   height: 25px;
+   background-color: white;
+   border-radius: 90px;
+   transition: 0.3s;
+}
+
+input:checked + label {
+   background-color: var(--letter-color);
+}
+
+input:checked + label::after {
+   left: calc(100% - 5px);
+   transform: translateX(-100%);
+   background-color: var(--body-bg);
+}
+
+label:active:after {
+   width: 45px;
+}
+.c-moon-icon {
+   width: 20px;
+   margin-right: auto;
+   margin-left: 6px;
+   user-select: none;
+}
+
+.c-sun-icon {
+   width: 20px;
+   margin-left: auto;
+   margin-right: 6px;
+   user-select: none;
+}
 
 .c-container-geral {
    display: flex;
@@ -37,6 +101,7 @@ body {
 
 .c-about-container {
    margin-bottom: 50px;
+   color: var(--letter-color);
 }
 .c-profile-picture {
    border-radius: 100%;
@@ -44,36 +109,44 @@ body {
    margin-bottom: 15px;
 }
 
-/* PROJECTS */
+.c-buttons-container {
+   margin-bottom: 10px;
+}
+
+/* ================= PROJECTS ================= */
 
 .c-projects-container {
-   width: 400px;
+   width: 500px;
    text-align: center;
    margin: auto;
    /* border: 1px solid white; */
 }
 
 .u-project {
-   width: 300px;
+   width: 500px;
    margin: 10px auto 10px auto;
    padding: 20px 0 20px 0;
    border: 3px solid rgb(111, 110, 114);
    border-radius: 0.25rem;
+   background-color: rgba(45, 45, 46, 0.555);
 }
 
 .u-project-title {
-   margin-top: 10px;
+   margin: 10px 0 10px 0;
+   color: var(--letter-color);
 }
 
 .u-img-project {
-   width: 200px;
+   width: 450px;
    margin-bottom: 20px;
 }
 
 .u-project-buttons-container {
+   margin: 0 auto;
+   width: 120px;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-between;
 }
 
 .u-project-buttons {
