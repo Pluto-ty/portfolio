@@ -1,5 +1,5 @@
 <h1 align="center">
-     <a href="https://github.com/Pluto-ty/FlexBlog" alt="FlexBlog"> Portfólio</a>
+     <a href="https://github.com/Pluto-ty/portfolio" alt="Portfólio"> Portfólio</a>
 </h1>
 
 <h3 align="center">
@@ -7,17 +7,17 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Pluto-ty/FlexBlog?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Pluto-ty/portfolio?style=flat-square">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Pluto-ty/FlexBlog">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Pluto-ty/portfolio">
   
   <a href="https://github.com/Pluto-ty/README/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Pluto-ty/FlexBlog">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Pluto-ty/portfolio">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/Pluto-ty/FlexBlog/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/Pluto-ty/FlexBlog?style=social">
+   <a href="https://github.com/Pluto-ty/portfolio/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/Pluto-ty/portfolio?style=social">
   </a>
   
  
@@ -47,7 +47,7 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 
 Este projeto só usa Front-end ( Html, Css e Javascript). Clique no link abaixo para ver a aplicação rodando no seu navegador.
 
-<a href="https://pluto-ty.github.io/FlexBlog/" > DEMO </a>
+<a href="https://pluto-ty.github.io/portfolio/" > DEMO </a>
 
 ### Pré-requisitos
 
