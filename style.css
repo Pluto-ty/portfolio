@@ -1,13 +1,5 @@
 /* ================= REGRAS GERAIS ================= */
-:root {
-   --body-bg: #eeeeee;
-   --letter-color: black;
-}
 
-.dark-mode:root {
-   --body-bg: rgb(61, 55, 85);
-   --letter-color: white;
-}
 * {
    margin: 0;
    padding: 0;
