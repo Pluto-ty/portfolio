@@ -10,4 +10,100 @@
 
 body {
    background: var(--body-bg);
+   background: #181f1c;
+   font-family: Consolas;
+}
+
+.c-box {
+   max-width: 1920px;
+   height: 100vh;
+   display: grid;
+   grid:
+      "main" 1fr
+      "footer" 50px;
+}
+
+main {
+   margin-left: 300px;
+   margin-top: 100px;
+}
+
+.c-container {
+   display: grid;
+   grid:
+      "nav conteudo"
+      "nav conteudo"
+      / 30px 400px;
+}
+
+/* Buttons */
+
+.c-buttons {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   position: relative;
+}
+
+.c-buttons::before {
+   position: absolute;
+   z-index: -1;
+   content: "";
+   width: 20px;
+   height: 100%;
+   background: #000;
+}
+
+.c-buttons li {
+   width: 15px;
+   background: aqua;
+   height: 15px;
+   border-radius: 0.5em;
+}
+
+/* About */
+
+.c-content {
+   height: 250px;
+}
+
+.c-content p {
+   font-size: 1.5em;
+   color: white;
+}
+
+.c-content span {
+   color: aqua;
+}
+
+.c-content h2 {
+   font-size: 55px;
+   font-weight: bold;
+   color: aqua;
+}
+
+.c-content a {
+   text-align: center;
+   display: block;
+   padding: 10px;
+   background: aqua;
+   width: 120px;
+   margin: 30px 0 0 120px;
+   border-radius: 2em;
+}
+
+/* Footer */
+
+footer {
+   background: #0f1613;
+}
+
+.c-footer-imgs {
+   width: 100px;
+   margin: 0 auto;
+}
+
+.c-footer-imgs img {
+   width: 40px;
 }
