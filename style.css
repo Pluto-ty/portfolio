@@ -9,7 +9,7 @@
 * {
    margin: 0;
    padding: 0;
-   box-sizing: 0;
+   box-sizing: border-box;
    list-style-type: none;
    text-decoration: none;
    font-family: Consolas;
@@ -17,36 +17,32 @@
 
 /* Container Geral */
 
+.c-container-geral {
+   display: flex;
+   overflow-y: hidden;
+   scroll-snap-type: x mandatory;
+   -webkit-overflow-scrolling: touch;
+   scroll-behavior: smooth;
+}
+
 .c-box {
+   min-width: 100vw;
    display: grid;
    height: 100vh;
    grid:
       "main" 1fr
       "footer" 50px;
    background: var(--cor-secundária);
+   scroll-snap-align: start;
 }
 
-/* Content */
-
-main {
-   grid-area: main;
-   display: flex;
-   justify-content: center;
-}
-
-.c-container {
-   margin-top: 80px;
-   display: grid;
-   grid:
-      "nav" 30px
-      "conteudo";
-   gap: 20px;
-}
+/* ============= Estilos Gerais ============= */
 
 /* Nav */
 .c-buttons {
    display: flex;
    justify-content: space-evenly;
+   align-items: center;
 }
 
 .c-buttons li {
@@ -60,30 +56,46 @@ main {
    margin-left: 20px;
 }
 
+.c-home .c-button-home {
+   width: 7px;
+   height: 7px;
+}
+
+.c-projects .c-button-projects {
+   width: 7px;
+   height: 7px;
+}
+
+.c-contact .c-button-contact {
+   width: 7px;
+   height: 7px;
+}
+
 /* Content */
 
-.c-content {
-   width: 280px;
-}
-.c-content p {
-   font-size: 16.65px;
-   color: white;
-   width: 250px;
-   margin: 0 auto;
+main {
+   grid-area: main;
+   display: flex;
+   justify-content: center;
 }
 
-.c-content span {
-   color: var(--cor-principal);
-   font-weight: bold;
+.c-container {
+   margin: 80px 20px 0 20px;
+   display: grid;
+   grid:
+      "nav" 30px
+      "conteudo";
+   gap: 20px;
+}
+
+.c-content p {
+   color: white;
 }
 
 .c-content h2 {
-   font-size: 33.3px;
    font-weight: bold;
    color: var(--cor-principal);
    letter-spacing: 2.7px;
-   width: 253px;
-   margin: 0 auto;
 }
 
 .c-content a {
@@ -93,7 +105,7 @@ main {
    border-radius: 3em;
    background: var(--cor-principal);
    font-weight: bold;
-   width: 80px;
+   width: 100px;
    text-align: center;
    margin: 20px auto 0 auto;
 }
@@ -116,4 +128,101 @@ footer img {
 
 footer img + img {
    margin-left: 20px;
+}
+
+/* ============= Home Page ============= */
+
+.c-home .c-content {
+   max-width: 280px;
+}
+.c-home .c-content p {
+   font-size: 16.65px;
+   color: white;
+   max-width: 250px;
+   margin: 0 auto;
+}
+
+.c-home .c-content span {
+   color: var(--cor-principal);
+   font-weight: bold;
+}
+
+.c-home .c-content h2 {
+   font-size: 33.3px;
+   max-width: 253px;
+   margin: 0 auto;
+}
+
+/* ============= Project Page ============= */
+
+.c-projects-container {
+   max-width: 340px;
+   overflow-y: visible;
+}
+
+.c-project-container {
+   display: grid;
+   min-width: 280px;
+   grid:
+      "mobile-img content"
+      "desktop-img desktop-img" / 150px 1fr;
+}
+
+.c-projects .c-mobile-img {
+   position: relative;
+   width: 100%;
+   grid-area: mobile-img;
+   z-index: 2;
+   box-shadow: 5px 5px 15px #00000063;
+}
+
+.c-projects .c-content {
+   grid-area: content;
+   padding-left: 20px;
+   max-width: 200px;
+   text-align: justify;
+}
+
+.c-projects .c-content p {
+   font-size: 12px;
+   max-width: 180px;
+}
+
+.c-projects .c-desktop-img {
+   grid-area: desktop-img;
+   width: 100%;
+   max-width: 320px;
+   position: relative;
+   top: -25px;
+   z-index: 1;
+}
+
+/* ============= Contact Page ============= */
+
+.c-contact .c-content {
+   text-align: center;
+   width: 350px;
+}
+
+.c-contact .c-content h2 {
+   font-size: 37.12px;
+}
+
+.c-contact .c-content p {
+   font-size: 12px;
+   width: 300px;
+   margin: 0 auto;
+}
+
+.c-contact .c-content ul {
+   text-align: start;
+   max-width: 200px;
+   margin: 20px auto 0 auto;
+   color: white;
+   font-size: 12px;
+}
+
+.c-contact .c-content img {
+   width: 10px;
+   margin-right: 10px;
 }
