@@ -18,7 +18,9 @@
 /* Container Geral */
 
 .c-container-geral {
+   height: 100vh;
    display: flex;
+   flex-direction: row;
    overflow-y: hidden;
    scroll-snap-type: x mandatory;
    -webkit-overflow-scrolling: touch;
@@ -36,6 +38,13 @@
    scroll-snap-align: start;
 }
 
+main {
+   grid-area: main;
+   display: flex;
+   justify-content: center;
+   margin-left: 0px;
+}
+
 /* ============= Estilos Gerais ============= */
 
 /* Nav */
@@ -43,6 +52,9 @@
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   flex-direction: row;
+   margin-top: 0px;
+   height: 100%;
 }
 
 .c-buttons li {
@@ -53,7 +65,7 @@
 }
 
 .c-buttons li + li {
-   margin-left: 20px;
+   margin: 0px 0px 0px 20px;
 }
 
 .c-home .c-button-home {
@@ -72,12 +84,6 @@
 }
 
 /* Content */
-
-main {
-   grid-area: main;
-   display: flex;
-   justify-content: center;
-}
 
 .c-container {
    margin: 80px 20px 0 20px;
@@ -98,7 +104,8 @@ main {
    letter-spacing: 2.7px;
 }
 
-.c-content a {
+.c-content a,
+.c-all-projects-button {
    display: block;
    color: var(--bg-footer);
    padding: 5px 10px 5px 10px;
@@ -108,6 +115,13 @@ main {
    width: 100px;
    text-align: center;
    margin: 20px auto 0 auto;
+   font-size: 16px;
+}
+
+.c-all-projects-button {
+   width: 170px;
+   padding: 10px;
+   margin-bottom: 10px;
 }
 
 /* Footer */
@@ -157,7 +171,8 @@ footer img + img {
 
 .c-projects-container {
    max-width: 340px;
-   overflow-y: visible;
+   overflow-y: scroll;
+   height: 450px;
 }
 
 .c-project-container {
@@ -166,6 +181,10 @@ footer img + img {
    grid:
       "mobile-img content"
       "desktop-img desktop-img" / 150px 1fr;
+}
+
+.c-project-container + .c-project-container {
+   margin-top: 10px;
 }
 
 .c-projects .c-mobile-img {
@@ -178,7 +197,7 @@ footer img + img {
 
 .c-projects .c-content {
    grid-area: content;
-   padding-left: 20px;
+   padding: 0px 0px 0px 20px;
    max-width: 200px;
    text-align: justify;
 }
@@ -225,4 +244,203 @@ footer img + img {
 .c-contact .c-content img {
    width: 10px;
    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+   /* ============= Estilos Gerais ============= */
+   .c-container-geral {
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+   }
+
+   .c-box {
+      min-width: 100vw;
+      display: grid;
+      height: 100vh;
+      grid:
+         "main" 1fr
+         "footer" 50px;
+      background: var(--cor-secundária);
+      scroll-snap-align: start;
+   }
+
+   /* ============= Main =============*/
+   main {
+      grid-area: main;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 300px;
+   }
+
+   .c-container {
+      margin: 80px 20px 0 20px;
+      display: grid;
+      grid: "nav conteudo";
+      gap: 20px;
+   }
+
+   /* ============= Nav ============= */
+   .c-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 400px;
+      margin-top: 40px;
+   }
+
+   .c-buttons li + li {
+      margin: 20px 0px 0px 0px;
+   }
+
+   .c-buttons li {
+      background: var(--cor-principal);
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+   }
+
+   /* ============= Buttons ============= */
+
+   .c-content a,
+   .c-all-projects-button {
+      display: block;
+      color: var(--bg-footer);
+      padding: 5px 10px 5px 10px;
+      border-radius: 3em;
+      background: var(--cor-principal);
+      font-weight: bold;
+      width: 150px;
+      text-align: center;
+      margin: 20px auto 0 auto;
+      font-size: 22px;
+   }
+
+   .c-all-projects-button {
+      width: 170px;
+      padding: 10px;
+      margin-bottom: 10px;
+   }
+
+   /* ============= HOME ============= */
+
+   .c-home .c-content {
+      max-width: 500px;
+      margin: 50px 0 0 25px;
+   }
+   .c-home .c-content p {
+      font-size: 30.65px;
+      color: white;
+      max-width: 100%;
+      margin: 0 auto;
+   }
+   .c-home .c-content h2 {
+      font-size: 64.5px;
+      max-width: 100%;
+   }
+
+   /* ============= Projetos =============  */
+   .c-projects-container {
+      max-width: 900px;
+      overflow-y: scroll;
+      height: 550px;
+      margin: 50px 0 0 50px;
+   }
+
+   .c-project-container {
+      display: grid;
+      min-width: 280px;
+      max-width: 900px;
+      grid:
+         "desktop-img mobile-img" 350px
+         "content mobile-img" 100px/ 700px 100px;
+      width: 100%;
+   }
+
+   .c-project-container + .c-project-container {
+      margin-top: 100px;
+   }
+
+   .c-projects .c-mobile-img {
+      position: relative;
+      width: 200px;
+      grid-area: mobile-img;
+      z-index: 2;
+      box-shadow: 5px 5px 50px #00000063;
+      top: 60px;
+      right: 110px;
+   }
+
+   .c-projects .c-content {
+      grid-area: content;
+      padding: 10px 0px 0px 0px;
+      max-width: 480px;
+      text-align: justify;
+   }
+
+   .c-projects .c-content p {
+      font-size: 16px;
+      max-width: 100%;
+   }
+
+   .c-projects .c-desktop-img {
+      grid-area: desktop-img;
+      width: 100%;
+      max-width: 700px;
+      position: relative;
+      top: 0px;
+      z-index: 1;
+   }
+
+   .c-projects .c-content a {
+      width: 90px;
+   }
+
+   /* ============= Contact ============= */
+
+   .c-contact .c-content {
+      max-width: 800px;
+      width: 100%;
+      margin: 40px 0 0 80px;
+   }
+
+   .c-contact .c-content h2 {
+      text-align: center;
+      font-size: 70px;
+   }
+
+   .c-contact .c-content p {
+      text-align: center;
+      font-size: 22px;
+      max-width: 620px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .c-contact .c-content ul {
+      text-align: start;
+      max-width: 350px;
+      margin: 50px auto 0 auto;
+      color: white;
+      font-size: 20px;
+   }
+
+   .c-contact .c-content ul li {
+      display: flex;
+      align-items: center;
+   }
+
+   .c-contact .c-content ul li + li {
+      margin: 5px 0 0 0;
+   }
+
+   .c-contact .c-content img {
+      width: 30px;
+      margin-right: 20px;
+   }
 }
