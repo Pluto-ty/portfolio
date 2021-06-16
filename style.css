@@ -68,7 +68,7 @@ main {
    margin: 0px 0px 0px 20px;
 }
 
-.c-home .c-button-home {
+/* .c-home .c-button-home {
    width: 7px;
    height: 7px;
 }
@@ -81,7 +81,7 @@ main {
 .c-contact .c-button-contact {
    width: 7px;
    height: 7px;
-}
+} */
 
 /* Content */
 
@@ -146,22 +146,22 @@ footer img + img {
 
 /* ============= Home Page ============= */
 
-.c-home .c-content {
+.c-home-content {
    max-width: 280px;
 }
-.c-home .c-content p {
+.c-home-content p {
    font-size: 16.65px;
    color: white;
    max-width: 250px;
    margin: 0 auto;
 }
 
-.c-home .c-content span {
+.c-home-content span {
    color: var(--cor-principal);
    font-weight: bold;
 }
 
-.c-home .c-content h2 {
+.c-home-content h2 {
    font-size: 33.3px;
    max-width: 253px;
    margin: 0 auto;
@@ -253,9 +253,6 @@ footer img + img {
       flex-direction: column;
       overflow-x: hidden;
       overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
    }
 
    .c-box {
@@ -266,7 +263,17 @@ footer img + img {
          "main" 1fr
          "footer" 50px;
       background: var(--cor-secundária);
-      scroll-snap-align: start;
+      /* scroll-snap-align: start; */
+   }
+
+   .c-pages-container {
+      max-height: 700px;
+      width: 1100px;
+      overflow: hidden;
+      transition: 1s ease;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
    }
 
    /* ============= Main =============*/
@@ -274,11 +281,10 @@ footer img + img {
       grid-area: main;
       display: flex;
       justify-content: flex-start;
-      margin-left: 300px;
    }
 
    .c-container {
-      margin: 80px 20px 0 20px;
+      margin: 0px 20px 0 320px;
       display: grid;
       grid: "nav conteudo";
       gap: 20px;
@@ -290,8 +296,8 @@ footer img + img {
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      height: 400px;
-      margin-top: 40px;
+      height: 500px;
+      margin-top: 50px;
    }
 
    .c-buttons li + li {
@@ -321,44 +327,93 @@ footer img + img {
       font-size: 22px;
    }
 
-   .c-all-projects-button {
-      width: 170px;
-      padding: 10px;
-      margin-bottom: 10px;
-   }
-
    /* ============= HOME ============= */
 
-   .c-home .c-content {
+   .c-home-content {
       max-width: 500px;
-      margin: 50px 0 0 25px;
+      margin: 0px 0 0 25px;
+      padding: 80px 0 0 0;
+      height: 620px;
+      scroll-snap-align: start;
    }
-   .c-home .c-content p {
+   .c-home-content p {
       font-size: 30.65px;
       color: white;
       max-width: 100%;
       margin: 0 auto;
    }
-   .c-home .c-content h2 {
+   .c-home-content h2 {
       font-size: 64.5px;
       max-width: 100%;
    }
 
    /* ============= Projetos =============  */
+   .c-projects-grid {
+      width: 100%;
+      overflow: hidden;
+      height: 650px;
+      margin: 0px 0 20px 80px;
+      padding: 80px 0 0 0;
+      display: grid;
+      grid: "projects nav" 100% / 920px 50px;
+      scroll-snap-align: start;
+   }
+
    .c-projects-container {
-      max-width: 900px;
-      overflow-y: scroll;
-      height: 550px;
-      margin: 50px 0 0 50px;
+      grid-area: projects;
+      max-width: 920px;
+      height: 100%;
+      overflow: hidden;
+      scroll-behavior: smooth;
+   }
+
+   .c-projects-nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 95%;
+   }
+
+   .c-projects-nav .c-buttons {
+      height: 150px;
+      margin-top: 0px;
+      justify-content: center;
+   }
+   .c-all-projects-button {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 10px 10px 10px 5px;
+      margin: 180px 0 15px 0;
+      border-radius: 0 1em 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s ease-in-out;
+   }
+
+   .c-all-projects-button:hover {
+      width: 100px;
+   }
+
+   .c-all-projects-button img {
+      width: 40px;
+   }
+
+   .c-all-projects-button p {
+      display: none;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 16px;
    }
 
    .c-project-container {
       display: grid;
       min-width: 280px;
-      max-width: 900px;
       grid:
-         "desktop-img mobile-img" 350px
-         "content mobile-img" 100px/ 700px 100px;
+         "desktop-img mobile-img" 400px
+         "content mobile-img" 100px/ 800px 100px;
       width: 100%;
    }
 
@@ -366,55 +421,58 @@ footer img + img {
       margin-top: 100px;
    }
 
-   .c-projects .c-mobile-img {
+   .c-project-container .c-mobile-img {
       position: relative;
-      width: 200px;
+      width: 250px;
       grid-area: mobile-img;
       z-index: 2;
       box-shadow: 5px 5px 50px #00000063;
-      top: 60px;
-      right: 110px;
+      top: 80px;
+      right: 150px;
    }
 
-   .c-projects .c-content {
+   .c-project-container .c-content {
       grid-area: content;
       padding: 10px 0px 0px 0px;
-      max-width: 480px;
+      max-width: 630px;
       text-align: justify;
    }
 
-   .c-projects .c-content p {
+   .c-project-container .c-content p {
       font-size: 16px;
       max-width: 100%;
    }
 
-   .c-projects .c-desktop-img {
+   .c-project-container .c-desktop-img {
       grid-area: desktop-img;
       width: 100%;
-      max-width: 700px;
+      max-width: 800px;
       position: relative;
       top: 0px;
       z-index: 1;
    }
 
-   .c-projects .c-content a {
+   .c-project-container .c-content a {
       width: 90px;
    }
 
    /* ============= Contact ============= */
 
-   .c-contact .c-content {
+   .c-contact-content {
       max-width: 800px;
       width: 100%;
-      margin: 40px 0 0 80px;
+      height: 700px;
+      margin: 80px 0px 0px 120px;
+      padding: 80px;
+      scroll-snap-align: start;
    }
 
-   .c-contact .c-content h2 {
+   .c-contact-content h2 {
       text-align: center;
       font-size: 70px;
    }
 
-   .c-contact .c-content p {
+   .c-contact-content p {
       text-align: center;
       font-size: 22px;
       max-width: 620px;
@@ -422,7 +480,7 @@ footer img + img {
       margin: 0 auto;
    }
 
-   .c-contact .c-content ul {
+   .c-contact-content ul {
       text-align: start;
       max-width: 350px;
       margin: 50px auto 0 auto;
@@ -430,16 +488,16 @@ footer img + img {
       font-size: 20px;
    }
 
-   .c-contact .c-content ul li {
+   .c-contact-content ul li {
       display: flex;
       align-items: center;
    }
 
-   .c-contact .c-content ul li + li {
+   .c-contact-content ul li + li {
       margin: 5px 0 0 0;
    }
 
-   .c-contact .c-content img {
+   .c-contact-content img {
       width: 30px;
       margin-right: 20px;
    }
