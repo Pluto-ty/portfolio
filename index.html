@@ -13,9 +13,27 @@
             <main>
                <div class="c-container">
                   <ul class="c-buttons" id="js-home">
-                     <li class="c-button-home"></li>
-                     <li></li>
-                     <li></li>
+                     <li
+                        class="c-button-nav-pages u-current-page"
+                        onmouseover="showTextNav(1)"
+                        onmouseleave="removeTextNav(1)"
+                     >
+                        <p id="js-text-home">ínicio</p>
+                     </li>
+                     <li
+                        class="c-button-nav-pages"
+                        onmouseover="showTextNav(2)"
+                        onmouseleave="removeTextNav(2)"
+                     >
+                        <p id="js-text-projects">Projetos</p>
+                     </li>
+                     <li
+                        class="c-button-nav-pages"
+                        onmouseover="showTextNav(3)"
+                        onmouseleave="removeTextNav(3)"
+                     >
+                        <p id="js-text-about">Sobre</p>
+                     </li>
                   </ul>
                   <div class="c-pages-container" id="js-pages-container">
                      <div class="c-content c-home-content c-home">
@@ -80,9 +98,11 @@
                         </div>
                         <div class="c-projects-nav">
                            <ul class="c-buttons" id="js-projects-nav">
-                              <li></li>
-                              <li></li>
-                              <li></li>
+                              <li
+                                 class="c-button-projects-pages u-current-page"
+                              ></li>
+                              <li class="c-button-projects-pages"></li>
+                              <li class="c-button-projects-pages"></li>
                            </ul>
                            <a
                               href=""

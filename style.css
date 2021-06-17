@@ -68,21 +68,6 @@ main {
    margin: 0px 0px 0px 20px;
 }
 
-/* .c-home .c-button-home {
-   width: 7px;
-   height: 7px;
-}
-
-.c-projects .c-button-projects {
-   width: 7px;
-   height: 7px;
-}
-
-.c-contact .c-button-contact {
-   width: 7px;
-   height: 7px;
-} */
-
 /* Content */
 
 .c-container {
@@ -284,13 +269,13 @@ footer img + img {
    }
 
    .c-container {
-      margin: 0px 20px 0 320px;
+      margin: 0px 20px 0 240px;
       display: grid;
-      grid: "nav conteudo";
+      grid: "nav conteudo" / 80px;
       gap: 20px;
    }
 
-   /* ============= Nav ============= */
+   /* ============= Buttons ============= */
    .c-buttons {
       display: flex;
       flex-direction: column;
@@ -309,9 +294,24 @@ footer img + img {
       width: 15px;
       height: 15px;
       border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 150ms ease-in-out;
+   }
+   .c-buttons li p {
+      display: none;
+   }
+   .c-buttons .c-button-nav-pages:hover {
+      width: 80px;
+      height: 30px;
    }
 
-   /* ============= Buttons ============= */
+   .c-buttons .u-current-page,
+   .c-projects-nav .c-buttons .u-current-page {
+      width: 10px;
+      height: 10px;
+   }
 
    .c-content a,
    .c-all-projects-button {
