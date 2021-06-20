@@ -360,7 +360,7 @@ footer img + img {
       grid: "Home" 700px "Projects" 700px "About" 700px / 100vw;
       max-height: 700px;
       width: 100%;
-      max-width: 1100px;
+      max-width: 700px;
       overflow: hidden;
       transition: 1s ease;
       scroll-snap-type: y mandatory;
@@ -376,7 +376,7 @@ footer img + img {
    }
 
    .c-container {
-      margin: 0px 20px 0 140px;
+      margin: 0px 20px 0 0px;
       display: grid;
       grid: "nav conteudo" / 80px;
       gap: 20px;
@@ -462,10 +462,10 @@ footer img + img {
       width: 100%;
       overflow: hidden;
       height: 650px;
-      margin: 0px 0 20px 80px;
+      margin: 0px 0 20px 0px;
       padding: 80px 0 0 0;
       display: grid;
-      grid: "projects nav" 100% / 920px 50px;
+      grid: "projects nav" 100% / 600px 50px;
       scroll-snap-align: start;
    }
 
@@ -481,8 +481,8 @@ footer img + img {
       grid-area: nav;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      height: 95%;
+      justify-content: flex-start;
+      height: 100%;
    }
 
    .c-projects-nav .c-buttons {
@@ -495,7 +495,7 @@ footer img + img {
       width: 40px;
       height: 40px;
       padding: 10px 10px 10px 5px;
-      margin: 180px 0 15px 0;
+      margin: 149px 0 15px 0;
       border-radius: 0 1em 1em 0;
       display: flex;
       align-items: center;
@@ -523,29 +523,29 @@ footer img + img {
       display: grid;
       min-width: 280px;
       grid:
-         "desktop-img mobile-img" 400px
-         "content mobile-img" 100px/ 800px 100px;
+         "desktop-img mobile-img" 300px
+         "content mobile-img" 100px/ 600px 50px;
       width: 100%;
    }
 
    .c-project-container + .c-project-container {
-      margin-top: 100px;
+      margin-top: 200px;
    }
 
    .c-project-container .c-mobile-img {
       position: relative;
-      width: 250px;
+      width: 150px;
       grid-area: mobile-img;
       z-index: 2;
       box-shadow: 5px 5px 50px #00000063;
-      top: 80px;
+      top: 55px;
       right: 150px;
    }
 
    .c-project-container .c-content {
       grid-area: content;
       padding: 10px 0px 0px 0px;
-      max-width: 630px;
+      max-width: 400px;
       text-align: justify;
    }
 
@@ -557,7 +557,7 @@ footer img + img {
    .c-project-container .c-desktop-img {
       grid-area: desktop-img;
       width: 100%;
-      max-width: 800px;
+      max-width: 600px;
       position: relative;
       top: 0px;
       z-index: 1;
@@ -570,11 +570,11 @@ footer img + img {
    /* ============= Contact ============= */
 
    .c-contact-content {
-      max-width: 800px;
+      max-width: 600px;
       width: 100%;
       height: 700px;
-      margin: 80px 0px 0px 120px;
-      padding: 80px;
+      margin: 0px 0px 0px 0px;
+      padding: 80px 0 0px 0px;
       scroll-snap-align: start;
       grid-area: About;
    }
@@ -617,9 +617,99 @@ footer img + img {
 
 @media (min-width: 850px) {
    .c-container {
-      margin: 0px 20px 0 240px;
+      margin: 0 auto;
       display: grid;
       grid: "nav conteudo" / 80px;
       gap: 20px;
+   }
+}
+@media (min-width: 1280px) {
+   .c-pages-container {
+      max-width: 1100px;
+   }
+   .c-container {
+      margin: 0px 20px 0 140px;
+      display: grid;
+      grid: "nav conteudo" / 80px;
+      gap: 20px;
+   }
+   .c-project-container {
+      display: grid;
+      min-width: 280px;
+      grid:
+         "desktop-img mobile-img" 400px
+         "content mobile-img" 100px/ 800px 200px;
+      width: 100%;
+   }
+   .c-projects-grid {
+      grid-area: Projects;
+      width: 100%;
+      overflow: hidden;
+      height: 650px;
+      margin: 0px 0 20px 0px;
+      padding: 80px 0 0 0;
+      display: grid;
+      grid: "projects nav" 100% / 920px 50px;
+      scroll-snap-align: start;
+   }
+
+   .c-project-container + .c-project-container {
+      margin-top: 100px;
+   }
+
+   .c-project-container .c-content {
+      grid-area: content;
+      padding: 10px 0px 0px 0px;
+      max-width: 640px;
+      text-align: justify;
+   }
+
+   .c-project-container .c-desktop-img {
+      grid-area: desktop-img;
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+      top: 0px;
+      z-index: 1;
+   }
+   .c-project-container .c-mobile-img {
+      position: relative;
+      width: 250px;
+      grid-area: mobile-img;
+      z-index: 2;
+      box-shadow: 5px 5px 50px #00000063;
+      top: 80px;
+      right: 150px;
+   }
+
+   .c-projects-nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 95%;
+   }
+
+   .c-all-projects-button {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 10px 10px 10px 5px;
+      margin: 180px 0 15px 0;
+      border-radius: 0 1em 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s ease-in-out;
+   }
+
+   .c-contact-content {
+      max-width: 800px;
+      width: 100%;
+      height: 700px;
+      margin: 80px 0px 0px 120px;
+      padding: 80px;
+      scroll-snap-align: start;
+      grid-area: About;
    }
 }
