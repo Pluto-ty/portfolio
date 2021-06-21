@@ -37,7 +37,7 @@
    scroll-snap-type: x mandatory;
    -webkit-overflow-scrolling: touch;
    scroll-behavior: smooth;
-   gap: 20px;
+   gap: 30px;
 }
 
 .c-box {
@@ -324,6 +324,7 @@ footer img + img {
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
+      gap: 50px;
    }
 
    /* Projects */
