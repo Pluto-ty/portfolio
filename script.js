@@ -1,6 +1,12 @@
+let screenWidth = screen.width;
+
+if (screenWidth > 770) {
+   document.querySelector("#js-pages-container").style.overflow = "hidden";
+}
 document.querySelector("#js-home").addEventListener("wheel", (event) => {
    // alert("test");
    let windowWidth = window.innerWidth;
+
    if (windowWidth > 768) {
       let buttons = document.querySelectorAll(".c-button-nav-pages");
       let pages = document.querySelector("#js-pages-container");
@@ -23,6 +29,14 @@ document.querySelector("#js-home").addEventListener("wheel", (event) => {
             buttons[1].classList.toggle("u-current-page");
             buttons[0].classList.toggle("u-current-page");
          }
+      }
+   }
+   if (windowWidth < 768) {
+      let pages = document.querySelector("#js-pages-container");
+      if (event.deltaY > 0) {
+         pages.scrollBy(375, 0);
+      } else {
+         pages.scrollBy(-375, 0);
       }
    }
 });
@@ -81,11 +95,17 @@ function showTextNav(id) {
    let windowWidth = window.innerWidth;
    if (windowWidth > 768) {
       if (id == 1) {
-         document.querySelector("#js-text-home").style.display = "block";
+         setTimeout(() => {
+            document.querySelector("#js-text-home").style.display = "block";
+         }, 150);
       } else if (id == 2) {
-         document.querySelector("#js-text-projects").style.display = "block";
+         setTimeout(() => {
+            document.querySelector("#js-text-projects").style.display = "block";
+         }, 150);
       } else if (id == 3) {
-         document.querySelector("#js-text-about").style.display = "block";
+         setTimeout(() => {
+            document.querySelector("#js-text-about").style.display = "block";
+         }, 150);
       }
    }
 }
@@ -94,11 +114,17 @@ function removeTextNav(id) {
    let windowWidth = window.innerWidth;
    if (windowWidth > 768) {
       if (id == 1) {
-         document.querySelector("#js-text-home").style.display = "none";
+         setTimeout(() => {
+            document.querySelector("#js-text-home").style.display = "none";
+         }, 150);
       } else if (id == 2) {
-         document.querySelector("#js-text-projects").style.display = "none";
+         setTimeout(() => {
+            document.querySelector("#js-text-projects").style.display = "none";
+         }, 150);
       } else if (id == 3) {
-         document.querySelector("#js-text-about").style.display = "none";
+         setTimeout(() => {
+            document.querySelector("#js-text-about").style.display = "none";
+         }, 150);
       }
    }
 }

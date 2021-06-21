@@ -13,30 +13,36 @@
             <main>
                <div class="c-container">
                   <ul class="c-buttons" id="js-home">
-                     <li
-                        class="c-button-nav-pages u-current-page"
-                        onmouseover="showTextNav(1)"
-                        onmouseleave="removeTextNav(1)"
-                     >
-                        <p id="js-text-home">ínicio</p>
-                     </li>
-                     <li
-                        class="c-button-nav-pages"
-                        onmouseover="showTextNav(2)"
-                        onmouseleave="removeTextNav(2)"
-                     >
-                        <p id="js-text-projects">Projetos</p>
-                     </li>
-                     <li
-                        class="c-button-nav-pages"
-                        onmouseover="showTextNav(3)"
-                        onmouseleave="removeTextNav(3)"
-                     >
-                        <p id="js-text-about">Sobre</p>
-                     </li>
+                     <a href="#--Home">
+                        <li
+                           class="c-button-nav-pages u-current-page"
+                           onmouseover="showTextNav(1)"
+                           onmouseleave="removeTextNav(1)"
+                        >
+                           <p id="js-text-home">ínicio</p>
+                        </li>
+                     </a>
+                     <a href="#--Projects">
+                        <li
+                           class="c-button-nav-pages"
+                           onmouseover="showTextNav(2)"
+                           onmouseleave="removeTextNav(2)"
+                        >
+                           <p id="js-text-projects">Projetos</p>
+                        </li>
+                     </a>
+                     <a href="#--Contact">
+                        <li
+                           class="c-button-nav-pages"
+                           onmouseover="showTextNav(3)"
+                           onmouseleave="removeTextNav(3)"
+                        >
+                           <p id="js-text-about">Sobre</p>
+                        </li>
+                     </a>
                   </ul>
                   <div class="c-pages-container" id="js-pages-container">
-                     <div class="c-content c-home-content">
+                     <div id="--Home" class="c-content c-home-content">
                         <p>
                            Olá, eu sou <span>Thyago Araujo</span> e sou um
                            desenvolvedor
@@ -44,30 +50,32 @@
                         <h2>FRONT-ENDING</h2>
                         <a href="">PROJETOS</a>
                      </div>
-                     <div class="c-projects-grid">
+                     <div id="--Projects" class="c-projects-grid">
                         <div
                            class="c-projects-container"
                            id="js-projects-container"
                         >
                            <div class="c-project-container">
                               <img
-                                 src="./assets/projects-img/wildbeast/mobile.PNG"
+                                 src="./assets/projects-img/DevFinance/demonstration-mobile.gif"
                                  alt=""
                                  class="c-mobile-img"
                               />
                               <div class="c-content">
                                  <p>
-                                    &nbsp;&nbsp;Lorem Ipsum is simply dummy text
-                                    of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book.
+                                    &nbsp;&nbsp; Uma aplicação para controle
+                                    financeiro para mais de um usuário. Nele
+                                    temos os gastos separados por meses, podendo
+                                    também colocar gastos fixos, ter uma visão
+                                    geral em um gráfico com os gastos totais de
+                                    todos os meses, podendo remove-los quando
+                                    desejar e com armazenamento local usando
+                                    local storage.
                                  </p>
                                  <a href="">Site</a>
                               </div>
                               <img
-                                 src="./assets/projects-img/wildbeast/deskot.PNG"
+                                 src="./assets/projects-img/DevFinance/web.png"
                                  class="c-desktop-img"
                                  alt=""
                               />
@@ -80,12 +88,9 @@
                               />
                               <div class="c-content">
                                  <p>
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled
-                                    it to make a type specimen book.
+                                    &nbsp;&nbsp;Esse projeto foi feito com o
+                                    intuito de criar um layout responsivo tanto
+                                    para desktop e aparelhos mobile.
                                  </p>
                                  <a href="">Site</a>
                               </div>
@@ -121,7 +126,7 @@
                            </a>
                         </div>
                      </div>
-                     <div class="c-content c-contact-content">
+                     <div id="--Contact" class="c-content c-contact-content">
                         <h2>Sobre mim</h2>
                         <p>
                            A procura de uma oportunidade na área de
@@ -130,23 +135,40 @@
                         </p>
                         <ul>
                            <li>
-                              <img src="./assets/Whatsapp.svg" alt="" />(00) 0
-                              0000-0000
+                              <img
+                                 src="./assets/Whatsapp.svg"
+                                 alt="Whatsapp Image"
+                              />(27) 9 9975-5684
                            </li>
                            <li>
                               <img
                                  src="./assets/Email.svg"
-                                 alt=""
+                                 alt="Email image"
                               />thyagoaraujomotta@gmail.com
                            </li>
                            <li>
-                              <img src="./assets/Github.svg" alt="" />Github
+                              <a href="https://github.com/ThyagoAraujoM">
+                                 <img
+                                    src="./assets/Github.svg"
+                                    alt="Github Image"
+                                 />
+                                 Github</a
+                              >
                            </li>
                            <li>
-                              <img src="./assets/linkedin.svg" alt="" />Linkedin
+                              <a
+                                 href="https://www.linkedin.com/in/thyago-araujo-m/"
+                              >
+                                 <img
+                                    src="./assets/linkedin.svg"
+                                    alt="Linkedin Image"
+                                 />
+                                 Linkedin
+                              </a>
                            </li>
                         </ul>
                         <a
+                           class="c-currículo-download"
                            href="./assets/Curriculo_Thyago_Informática.pdf"
                            download
                            >Currículo</a

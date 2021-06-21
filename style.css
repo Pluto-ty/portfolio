@@ -75,6 +75,7 @@ main {
    width: 10px;
    height: 10px;
    border-radius: 50px;
+   color: var(--cor-secundária);
 }
 
 .c-buttons li + li {
@@ -88,7 +89,7 @@ main {
 /* Content */
 
 .c-container {
-   margin: 80px 20px 0 20px;
+   margin: 80px 15px 0 15px;
    display: grid;
    grid:
       "nav" 30px
@@ -192,14 +193,14 @@ footer img + img {
    display: grid;
    min-width: 280px;
    width: 100%;
-   padding: 0 10px 0 0;
+   padding: 0 5px 0 0;
    grid:
       "mobile-img content"
       "desktop-img desktop-img" / 150px 1fr;
 }
 
 .c-project-container + .c-project-container {
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .c-project-container .c-mobile-img {
@@ -271,7 +272,8 @@ footer img + img {
    font-size: 12px;
 }
 
-.c-contact-content ul li {
+.c-contact-content ul li,
+.c-contact-content ul li a {
    display: flex;
    align-items: center;
 }
@@ -283,6 +285,32 @@ footer img + img {
 .c-contact-content img {
    width: 30px;
    margin-right: 20px;
+}
+
+.c-contact-content a {
+   color: white;
+   display: block;
+   padding: 0px;
+   border-radius: 0em;
+   background: none;
+   font-weight: normal;
+   width: 100%;
+   text-align: start;
+   margin: 0px;
+   font-size: 12px;
+}
+
+.c-contact-content .c-currículo-download {
+   display: block;
+   color: var(--bg-footer);
+   padding: 5px 10px 5px 10px;
+   border-radius: 3em;
+   background: var(--cor-principal);
+   font-weight: bold;
+   width: 150px;
+   text-align: center;
+   margin: 20px auto 0 auto;
+   font-size: 22px;
 }
 
 @media (max-width: 360px) {
@@ -305,10 +333,12 @@ footer img + img {
       margin: 0px;
       padding: 0px;
       display: grid;
-      grid: "projects" / 280px;
+      grid: "projects" / 300px;
       scroll-snap-align: start;
    }
-
+   .c-project-container {
+      padding: 0px 5px 0 0;
+   }
    .c-project-container .c-content {
       grid-area: content;
       padding: 0px 0px 0px 10px;
@@ -317,7 +347,7 @@ footer img + img {
    }
    .c-project-container .c-content p {
       font-size: 11px;
-      max-width: 130px;
+      max-width: 150px;
    }
 
    /* Contact */
@@ -404,7 +434,7 @@ footer img + img {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: 150ms ease-in-out;
+      transition: 300ms ease-in-out;
    }
 
    .c-buttons .c-button-nav-pages:hover {
@@ -600,7 +630,8 @@ footer img + img {
       font-size: 20px;
    }
 
-   .c-contact-content ul li {
+   .c-contact-content ul li,
+   .c-contact-content ul li a {
       display: flex;
       align-items: center;
    }
@@ -612,6 +643,32 @@ footer img + img {
    .c-contact-content img {
       width: 30px;
       margin-right: 20px;
+   }
+
+   .c-contact-content a {
+      color: white;
+      display: block;
+      padding: 0px;
+      border-radius: 0em;
+      background: none;
+      font-weight: normal;
+      width: 100%;
+      text-align: start;
+      margin: 0px;
+      font-size: 20px;
+   }
+
+   .c-contact-content .c-currículo-download {
+      display: block;
+      color: var(--bg-footer);
+      padding: 5px 10px 5px 10px;
+      border-radius: 3em;
+      background: var(--cor-principal);
+      font-weight: bold;
+      width: 150px;
+      text-align: center;
+      margin: 20px auto 0 auto;
+      font-size: 22px;
    }
 }
 
@@ -637,20 +694,23 @@ footer img + img {
       display: grid;
       min-width: 280px;
       grid:
-         "desktop-img mobile-img" 400px
+         "desktop-img mobile-img" 430px
          "content mobile-img" 100px/ 800px 200px;
       width: 100%;
+      grid-area: projects;
+      margin-bottom: 20px;
    }
    .c-projects-grid {
       grid-area: Projects;
       width: 100%;
       overflow: hidden;
-      height: 650px;
-      margin: 0px 0 20px 0px;
+      height: 700px;
+      margin: 60px 0 20px 0px;
       padding: 80px 0 0 0;
       display: grid;
       grid: "projects nav" 100% / 920px 50px;
       scroll-snap-align: start;
+      overflow-y: scroll;
    }
 
    .c-project-container + .c-project-container {
@@ -667,7 +727,9 @@ footer img + img {
    .c-project-container .c-desktop-img {
       grid-area: desktop-img;
       width: 100%;
+      height: 100%;
       max-width: 800px;
+      max-height: 430px;
       position: relative;
       top: 0px;
       z-index: 1;
@@ -678,7 +740,7 @@ footer img + img {
       grid-area: mobile-img;
       z-index: 2;
       box-shadow: 5px 5px 50px #00000063;
-      top: 80px;
+      top: 66px;
       right: 150px;
    }
 
