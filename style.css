@@ -695,7 +695,7 @@ footer img + img {
       min-width: 280px;
       grid:
          "desktop-img mobile-img" 430px
-         "content mobile-img" 100px/ 800px 200px;
+         "content mobile-img" 170px/ 800px 200px;
       width: 100%;
       grid-area: projects;
       margin-bottom: 20px;
