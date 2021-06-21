@@ -24,7 +24,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Em andamento 🚧
+	🚀 Completo 🚀
 </h4>
 
 <p align="center">
@@ -69,12 +69,12 @@ $ git clone https://github.com/thyagoaraujom/FlexBlog.git
 
 <h4 align="center"> Mobile </h4>
   <p align="center";>
-   	🚧 Em andamento 🚧
+   	<img src="./assets/readme/web.PNG"/>
   </p>
 
 <h4 align="center"> Web </h4>
 <p align="center" style="display: flex; justify-content: center;">
-  🚧 Em andamento 🚧
+  <img src="./assets/readme/mobile.gif"/>
 </p>
 
 ---
