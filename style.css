@@ -121,6 +121,11 @@ main {
    font-size: 16px;
 }
 
+.c-all-projects-button.mobile {
+   display: block;
+   margin: 0px auto 0 auto;
+}
+
 /* Footer */
 
 footer {
@@ -372,7 +377,7 @@ footer img + img {
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
-      overflow-y: scroll;
+      overflow-y: hidden;
    }
 
    .c-box {
@@ -463,6 +468,10 @@ footer img + img {
       font-size: 22px;
    }
 
+   .c-all-projects-button.mobile {
+      display: none;
+   }
+
    /* ============= HOME ============= */
 
    .c-home-content {
@@ -505,6 +514,8 @@ footer img + img {
       max-width: 920px;
       height: 100%;
       overflow: hidden;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
    }
 
@@ -543,7 +554,7 @@ footer img + img {
       display: inline-block;
    }
 
-   .c-all-projects-button p {
+   .c-all-projects-text {
       display: none;
       font-size: 16px;
       font-weight: bold;
@@ -555,8 +566,9 @@ footer img + img {
       min-width: 280px;
       grid:
          "desktop-img mobile-img" 300px
-         "content mobile-img" 100px/ 600px 50px;
+         "content mobile-img" 200px/ 600px 50px;
       width: 100%;
+      scroll-snap-align: start;
    }
 
    .c-project-container + .c-project-container {
@@ -751,6 +763,13 @@ footer img + img {
       flex-direction: column;
       justify-content: flex-end;
       height: 95%;
+   }
+
+   .c-all-projects-text {
+      display: none;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 16px;
    }
 
    .c-all-projects-button {

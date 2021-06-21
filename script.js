@@ -72,8 +72,9 @@ document
 
 function showText() {
    let windowWidth = window.innerWidth;
-   if (windowWidth > 768) {
+   if (windowWidth >= 768) {
       document.querySelector("#js-arrow").style.display = "none";
+      console.log(document.querySelector("#js-arrow").style);
       setTimeout(() => {
          document.querySelector("#js-all-projects-text").style.display =
             "block";
@@ -93,38 +94,38 @@ function removeText() {
 
 function showTextNav(id) {
    let windowWidth = window.innerWidth;
-   // if (windowWidth > 750) {
-   if (id == 1) {
-      setTimeout(() => {
-         document.querySelector("#js-text-home").style.display = "block";
-      }, 150);
-   } else if (id == 2) {
-      setTimeout(() => {
-         document.querySelector("#js-text-projects").style.display = "block";
-      }, 150);
-   } else if (id == 3) {
-      setTimeout(() => {
-         document.querySelector("#js-text-about").style.display = "block";
-      }, 150);
+   if (windowWidth > 768) {
+      if (id == 1) {
+         setTimeout(() => {
+            document.querySelector("#js-text-home").style.display = "block";
+         }, 150);
+      } else if (id == 2) {
+         setTimeout(() => {
+            document.querySelector("#js-text-projects").style.display = "block";
+         }, 150);
+      } else if (id == 3) {
+         setTimeout(() => {
+            document.querySelector("#js-text-about").style.display = "block";
+         }, 150);
+      }
    }
-   // }
 }
 
 function removeTextNav(id) {
    let windowWidth = window.innerWidth;
-   // if (windowWidth > 750) {
-   if (id == 1) {
-      setTimeout(() => {
-         document.querySelector("#js-text-home").style.display = "none";
-      }, 150);
-   } else if (id == 2) {
-      setTimeout(() => {
-         document.querySelector("#js-text-projects").style.display = "none";
-      }, 150);
-   } else if (id == 3) {
-      setTimeout(() => {
-         document.querySelector("#js-text-about").style.display = "none";
-      }, 150);
+   if (windowWidth > 768) {
+      if (id == 1) {
+         setTimeout(() => {
+            document.querySelector("#js-text-home").style.display = "none";
+         }, 150);
+      } else if (id == 2) {
+         setTimeout(() => {
+            document.querySelector("#js-text-projects").style.display = "none";
+         }, 150);
+      } else if (id == 3) {
+         setTimeout(() => {
+            document.querySelector("#js-text-about").style.display = "none";
+         }, 150);
+      }
    }
-   // }
 }
