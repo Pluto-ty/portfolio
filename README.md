@@ -47,7 +47,7 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 
 Este projeto só usa Front-end ( Html, Css e Javascript). Clique no link abaixo para ver a aplicação rodando no seu navegador.
 
-<a href="https://thyagoaraujom.github.io/portfolio/" > DEMO </a>
+<a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>
 
 ### Pré-requisitos
 
