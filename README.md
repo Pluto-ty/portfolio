@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-   Repositório para o meu portfólio.
+   Repositório para o meu portfólio
 </h3>
 
 <p align="center">
