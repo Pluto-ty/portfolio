@@ -45,7 +45,7 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 
 <h2 id="--como-executar-o-projeto-" align="center"> 🚀 Como executar o projeto </h2>
 
-Este projeto só usa Front-end ( Html, Css e Javascript). Clique no link abaixo para ver a aplicação rodando no seu navegador.
+<p align="center"> Este projeto só usa Front-end ( Html, Css e Javascript). Clique no link abaixo para ver a aplicação rodando no seu navegador. </p>
 
 <a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>
 
