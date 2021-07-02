@@ -48,23 +48,8 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 <p align="center"> Este projeto só usa Front-end ( Html, Css e Javascript).  </p>
 
 
-Clique no link abaixo para ver a aplicação rodando no seu navegador <a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>
+Clique no link para ver a aplicação rodando no seu navegador <a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>
 
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com) e um bom editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-
-1. Faça clone do projeto:
-
-```bash
-$ git clone https://github.com/thyagoaraujom/FlexBlog.git
-
-```
-
-2. Abra com o editor de escolha.
-
----
 
 <h2 align="center"> 🚀 Projeto </h2>
 
