@@ -4,197 +4,312 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat&display=swap"
+         rel="stylesheet"
+      />
       <link rel="stylesheet" href="./style.css" />
-      <title></title>
+      <title>Document</title>
    </head>
    <body>
-      <div class="c-container-geral">
-         <div class="c-box">
-            <main>
-               <div class="c-container">
-                  <ul class="c-buttons" id="js-home">
-                     <a href="#--Home">
-                        <li
-                           class="c-button-nav-pages u-current-page"
-                           onmouseover="showTextNav(1)"
-                           onmouseleave="removeTextNav(1)"
-                        >
-                           <p id="js-text-home">ínicio</p>
-                        </li>
-                     </a>
-                     <a href="#--Projects">
-                        <li
-                           class="c-button-nav-pages"
-                           onmouseover="showTextNav(2)"
-                           onmouseleave="removeTextNav(2)"
-                        >
-                           <p id="js-text-projects">Projetos</p>
-                        </li>
-                     </a>
-                     <a href="#--Contact">
-                        <li
-                           class="c-button-nav-pages"
-                           onmouseover="showTextNav(3)"
-                           onmouseleave="removeTextNav(3)"
-                        >
-                           <p id="js-text-about">Sobre</p>
-                        </li>
-                     </a>
-                  </ul>
-                  <div class="c-pages-container" id="js-pages-container">
-                     <div id="--Home" class="c-content c-home-content">
-                        <p>
-                           Olá, eu sou <span>Thyago Araujo</span> e sou um
-                           desenvolvedor
-                        </p>
-                        <h2>FRONT-ENDING</h2>
-                        <a href="">PROJETOS</a>
-                     </div>
-                     <div id="--Projects" class="c-projects-grid">
+      <div class="c-container">
+         <div>
+            <img class="c-logo" src="./images/Logo.svg" alt="" />
+            <div class="c-introduction">
+               <span
+                  >Olá, eu sou <span class="c-name">Thyago Araujo,</span>
+               </span>
+               <h1 class="c-title">DESENVOLVEDOR FRONT-END</h1>
+               <p>
+                  A procura de uma oportunidade na área de desenvolvimento -
+                  HTML, CSS, Javascript e React.
+               </p>
+               <button class="c-projects-button">
+                  <a href="#projetos">PROJETOS</a>
+               </button>
+            </div>
+            <div class="c-skills-container">
+               <div class="c-skills">
+                  <h2>Habilidades:</h2>
+                  <div>
+                     <div>
+                        <p class="c-skills-name">JavaScript</p>
                         <div
-                           class="c-projects-container"
-                           id="js-projects-container"
-                        >
-                           <div class="c-project-container">
-                              <img
-                                 src="./assets/projects-img/DevFinance/demonstration-mobile.gif"
-                                 alt=""
-                                 class="c-mobile-img"
-                              />
-                              <div class="c-content">
-                                 <p>
-                                    &nbsp;&nbsp; Uma aplicação para controle
-                                    financeiro para mais de um usuário. Nele
-                                    temos os gastos separados por meses, podendo
-                                    também colocar gastos fixos, ter uma visão
-                                    geral em um gráfico com os gastos totais de
-                                    todos os meses, podendo remove-los quando
-                                    desejar e com armazenamento local usando
-                                    local storage.
-                                 </p>
-                                 <a href="">Site</a>
-                              </div>
-                              <img
-                                 src="./assets/projects-img/DevFinance/web.png"
-                                 class="c-desktop-img"
-                                 alt=""
-                              />
-                           </div>
-                           <div class="c-project-container">
-                              <img
-                                 src="./assets/projects-img/wildbeast/mobile.PNG"
-                                 alt=""
-                                 class="c-mobile-img"
-                              />
-                              <div class="c-content">
-                                 <p>
-                                    &nbsp;&nbsp;Esse projeto foi feito com o
-                                    intuito de criar um layout responsivo tanto
-                                    para desktop e aparelhos mobile.
-                                 </p>
-                                 <a href="">Site</a>
-                              </div>
-                              <img
-                                 src="./assets/projects-img/wildbeast/deskot.PNG"
-                                 class="c-desktop-img"
-                                 alt=""
-                              />
-                           </div>
-                           <a
-                              href="https://thyagoaraujom.github.io/Praticando-templates/"
-                              target="_blank"
-                              class="c-all-projects-button mobile"
-                           >
-                              <p>Todos os Projetos</p>
-                           </a>
-                        </div>
-                        <div class="c-projects-nav">
-                           <ul class="c-buttons" id="js-projects-nav">
-                              <li
-                                 class="c-button-projects-pages u-current-page"
-                              ></li>
-                              <li class="c-button-projects-pages"></li>
-                              <li class="c-button-projects-pages"></li>
-                           </ul>
-                           <a
-                              href="https://thyagoaraujom.github.io/Praticando-templates/"
-                              target="_blank"
-                              class="c-all-projects-button"
-                              id="js-all-projects-button"
-                              onmouseover="showText()"
-                              onmouseleave="removeText()"
-                           >
-                              <img
-                                 src="./assets/seta.svg"
-                                 alt="Link para todos os projetos"
-                                 id="js-arrow"
-                              />
-                              <p
-                                 class="c-all-projects-text"
-                                 id="js-all-projects-text"
-                              >
-                                 Todos os Projetos
-                              </p>
-                           </a>
-                        </div>
+                           id="js-progress-bar-js"
+                           class="c-progress-bar"
+                        ></div>
                      </div>
-                     <div id="--Contact" class="c-content c-contact-content">
-                        <h2>Sobre mim</h2>
-                        <p>
-                           A procura de uma oportunidade na área de
-                           desenvolvimento Web - HTML, CSS, JavaScript e React.
-                           Estudo Game Dev por hobby e paixão.
-                        </p>
-                        <ul>
-                           <li>
-                              <img
-                                 src="./assets/Whatsapp.svg"
-                                 alt="Whatsapp Image"
-                              />(27) 9 9975-5684
-                           </li>
-                           <li>
-                              <img
-                                 src="./assets/Email.svg"
-                                 alt="Email image"
-                              />thyagoaraujomotta@gmail.com
-                           </li>
-                           <li>
-                              <a href="https://github.com/ThyagoAraujoM">
-                                 <img
-                                    src="./assets/Github.svg"
-                                    alt="Github Image"
-                                 />
-                                 Github</a
-                              >
-                           </li>
-                           <li>
-                              <a
-                                 href="https://www.linkedin.com/in/thyago-araujo-m/"
-                              >
-                                 <img
-                                    src="./assets/linkedin.svg"
-                                    alt="Linkedin Image"
-                                 />
-                                 Linkedin
-                              </a>
-                           </li>
-                        </ul>
-                        <a
-                           class="c-currículo-download"
-                           href="./assets/Curriculo_Thyago_Informática.pdf"
-                           download
-                           >Currículo</a
-                        >
+                     <div>
+                        <p class="c-skills-name">CSS/HTML</p>
+                        <div
+                           id="js-progress-bar-csshtml"
+                           class="c-progress-bar"
+                        ></div>
+                     </div>
+                     <div>
+                        <p class="c-skills-name">Bootstrap</p>
+                        <div
+                           id="js-progress-bar-bootstrap"
+                           class="c-progress-bar"
+                        ></div>
+                     </div>
+                     <div>
+                        <p class="c-skills-name">Jquery</p>
+                        <div
+                           id="js-progress-bar-jquery"
+                           class="c-progress-bar"
+                        ></div>
                      </div>
                   </div>
                </div>
-            </main>
-            <footer>
-               <img src="./assets/Github.svg" alt="" />
-               <img src="./assets/Home.svg" alt="" />
-            </footer>
+               <div class="c-learning">
+                  <h2>Aprendendo:</h2>
+                  <div>
+                     <div>
+                        <p class="c-skills-name">Node</p>
+                        <div
+                           id="js-progress-bar-node"
+                           class="c-progress-bar"
+                        ></div>
+                     </div>
+                     <div>
+                        <p class="c-skills-name">React</p>
+                        <div
+                           id="js-progress-bar-react"
+                           class="c-progress-bar"
+                        ></div>
+                     </div>
+                     <div>
+                        <p class="c-skills-name">Firebase</p>
+                        <div
+                           id="js-progress-bar-firebase"
+                           class="c-progress-bar"
+                        ></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
+      <div id="projetos" class="c-projects">
+         <h2>PROJETOS</h2>
+         <div class="c-next-prev-projects">
+            <div
+               onclick="nextPrevProjects(1)"
+               class="c-projects-1 c-group-button-projects active"
+            ></div>
+            <div
+               onclick="nextPrevProjects(2)"
+               class="c-projects-2 c-group-button-projects"
+            ></div>
+         </div>
+         <div class="c-box" id="js-box">
+            <div class="c-project">
+               <img
+                  class="c-project-img"
+                  src="./images/projects/devfinance.png"
+                  alt=""
+               />
+               <div class="c-project_content">
+                  <h3>Dev$finance</h3>
+                  <p>
+                     Dev$finance é um projeto feito durante uma das maratonas da
+                     rocketseat, utilizando apenas html,css e javascript temos
+                     as funcionalidades de multiplás carteiras, saldo do mês
+                     passado, planilha com visão geral dos gastos, seleção dos
+                     mesês e tudo utilizando localStorage para não perder os
+                     dados.
+                  </p>
+                  <div class="c-buttons">
+                     <a
+                        target="_blank"
+                        href="https://thyagoaraujom.github.io/Maratona-Discover/"
+                     >
+                        <button class="btn-site">SITE</button>
+                     </a>
+                     <a
+                        target="_blank"
+                        href="https://github.com/ThyagoAraujoM/Maratona-Discover"
+                     >
+                        <button class="btn-git">GITHUB</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="c-project bg-2">
+               <img
+                  class="c-project-img"
+                  src="./images/projects/fancy-border-radius.png"
+                  alt=""
+               />
+               <div class="c-project_content">
+                  <h3>Fancy Border Radius</h3>
+                  <p>
+                     Fancy Border radius é um projeto baseado em um dos desafios
+                     do repositório App Ideas no github. Nele temos que criar
+                     uma interface que o usuário possa modificar o border-radius
+                     do elemento a vontade e conseguir copia-lo pronto para usar
+                     no seu projeto.
+                  </p>
+                  <div class="c-buttons">
+                     <a
+                        href="https://thyagoaraujom.github.io/Praticando-templates/iniciante/Border-radius-Previewer/index.html"
+                     >
+                        <button class="btn-site">SITE</button>
+                     </a>
+                     <a
+                        href="https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/Border-radius-Previewer"
+                     >
+                        <button class="btn-git">GITHUB</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="c-project">
+               <img
+                  class="c-project-img"
+                  src="./images/projects/faq.png"
+                  alt=""
+               />
+               <div class="c-project_content">
+                  <h3>FAQ Template</h3>
+                  <p>
+                     Este projeto é um template básico de um FAQ baseado do site
+                     FrontendMentor, dele temos que recriar o design o mais
+                     fielmente possível ao protótipo recebido e que esteja
+                     responsivo para maioria dos dispositivos.
+                  </p>
+                  <div class="c-buttons">
+                     <a
+                        href="https://thyagoaraujom.github.io/Praticando-templates/iniciante/faq-accordion-card-main/index.html"
+                     >
+                        <button class="btn-site">SITE</button></a
+                     >
+                     <a
+                        href="https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/faq-accordion-card-main"
+                     >
+                        <button class="btn-git">GITHUB</button></a
+                     >
+                  </div>
+               </div>
+            </div>
+            <div class="c-project">
+               <img
+                  class="c-project-img"
+                  src="./images/projects/spliter.png"
+                  alt=""
+               />
+               <div class="c-project_content">
+                  <h3>Splitter</h3>
+                  <p>
+                     Slitter é um aplicativo para calculo de gorjeta, com o
+                     calculo em si, uma área para valores da gorjeta escolhida
+                     pelo usuário e um botão para zerar tudo, outro projeto
+                     baseado do site FrontendMentor.
+                  </p>
+                  <div class="c-buttons">
+                     <a
+                        href="https://thyagoaraujom.github.io/Praticando-templates/iniciante/tip-calculator-app-main/index.html"
+                     >
+                        <button class="btn-site">SITE</button>
+                     </a>
+                     <a
+                        href="https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/tip-calculator-app-main"
+                     >
+                        <button class="btn-git">GITHUB</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="c-project bg-2">
+               <img
+                  class="c-project-img"
+                  src="./images/projects/wildbeast.png"
+                  alt=""
+               />
+               <div class="c-project_content">
+                  <div>
+                     <h3>Wildbeast</h3>
+                     <p>
+                        Wildbeast é um template feito para a prática de grid
+                        layout, utilizando todos os seus conceitos para criar um
+                        layout responsivo para todos os tipos de dispositivos.
+                     </p>
+                  </div>
+                  <div class="c-buttons">
+                     <a href="https://thyagoaraujom.github.io/Wildbeast/">
+                        <button class="btn-site">SITE</button>
+                     </a>
+                     <a href="https://github.com/ThyagoAraujoM/Wildbeast">
+                        <button class="btn-git">GITHUB</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="c-project">
+               <img class="c-project-img" src="./images/project1.jpg" alt="" />
+               <div class="c-project_content">
+                  <div>
+                     <h3>FlexBox</h3>
+                     <p>
+                        Flexbox é um template feito para trinar flexbox como o
+                        próprio nome diz, feito com todos os seus princípios de
+                        flexibilidade para criar um layout responsivo para todos
+                        os tipos de dispositivos.
+                     </p>
+                  </div>
+                  <div class="c-buttons">
+                     <a href="#"> <button class="btn-site">SITE</button></a>
+                     <a href="#"> <button class="btn-git">GITHUB</button></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="c-about-container">
+         <div class="c-about">
+            <img class="c-about-img" src="./images/about-img.svg" alt="" />
+            <div class="c-about-content">
+               <h2>SOBRE MIM</h2>
+               <p>
+                  Sou um programador em busca de uma oportunidade para entrar no
+                  mercado. Já tenho experiência na criação de sites responsivos
+                  e estou sempre buscando aprender novas ferramentas para
+                  melhorar o meu trabalho, com mais de xx horas em cursos.
+                  Atualmente estou focando meus estudos em back-ending com Node
+                  e React.
+               </p>
+               <p>
+                  Você pode encontrar mais sobre meus projetos e minha rotina de
+                  estudos em minha conta no
+
+                  <a href="">Github</a>.
+               </p>
+               <a href="https://github.com/ThyagoAraujoM">
+                  <button>CURRÍCULO</button></a
+               >
+
+               <p class="c-email">
+                  thyagoaraujomotta@gmail.com
+                  <a onclick="copyText()">
+                     <img src="./images/copy-icon.svg" />
+                     <span class="c-copy">COPY</span>
+                  </a>
+               </p>
+               <p>
+                  (27) 9 9975-5684
+                  <a
+                     href="https://api.whatsapp.com/send?phone=5527999755684"
+                     target="_blank"
+                  >
+                     <img src="./images/whats-icon.svg" alt="" />
+                  </a>
+               </p>
+            </div>
+         </div>
+      </footer>
       <script src="./script.js"></script>
    </body>
 </html>

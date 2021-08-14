@@ -1,131 +1,103 @@
-let screenWidth = screen.width;
+let js = 7;
+let csshtml = 8;
+let bootstrap = 7;
+let jquery = 7;
+let node = 2;
+let react = 2;
+let fireBase = 2;
+let notMobile = true;
+let currentProject = 0;
+let maxProjects = Number(document.querySelectorAll(".c-project").length - 1);
+let mouseenter = false;
+let project = document.querySelectorAll(".c-project");
 
-if (screenWidth > 770) {
-   document.querySelector("#js-pages-container").style.overflow = "hidden";
+createRec(js, "js");
+createRec(csshtml, "csshtml");
+createRec(bootstrap, "bootstrap");
+createRec(jquery, "jquery");
+createRec(node, "node");
+createRec(react, "react");
+createRec(fireBase, "firebase");
+
+function createRec(value, name) {
+   for (let i = 0; i <= value; i++) {
+      setTimeout(() => {
+         document.getElementById(`js-progress-bar-${name}`).innerHTML +=
+            "<div class='c-rect'></div>";
+      }, 250 + i * 150);
+   }
 }
-document.querySelector("#js-home").addEventListener("wheel", (event) => {
-   // alert("test");
-   let windowWidth = window.innerWidth;
 
-   if (windowWidth > 768) {
-      let buttons = document.querySelectorAll(".c-button-nav-pages");
-      let pages = document.querySelector("#js-pages-container");
-      if (event.deltaY > 0) {
-         pages.scrollBy(0, 700);
+function copyText() {
+   let text = "thyagoaraujomotta@gmail.com";
+   navigator.clipboard.writeText(text);
+   document.querySelector(".c-copy").style.display = "inline-block";
 
-         if (buttons[0].classList.contains("u-current-page")) {
-            buttons[0].classList.toggle("u-current-page");
-            buttons[1].classList.toggle("u-current-page");
-         } else if (buttons[1].classList.contains("u-current-page")) {
-            buttons[1].classList.toggle("u-current-page");
-            buttons[2].classList.toggle("u-current-page");
-         }
-      } else {
-         pages.scrollBy(0, -700);
-         if (buttons[2].classList.contains("u-current-page")) {
-            buttons[2].classList.toggle("u-current-page");
-            buttons[1].classList.toggle("u-current-page");
-         } else if (buttons[1].classList.contains("u-current-page")) {
-            buttons[1].classList.toggle("u-current-page");
-            buttons[0].classList.toggle("u-current-page");
-         }
-      }
-   }
-   if (windowWidth < 768) {
-      let pages = document.querySelector("#js-pages-container");
-      if (event.deltaY > 0) {
-         pages.scrollBy(375, 0);
-      } else {
-         pages.scrollBy(-375, 0);
-      }
-   }
-});
+   setTimeout(() => {
+      document.querySelector(".c-copy").style.display = "none";
+   }, 1000);
+}
 
-document
-   .querySelector("#js-projects-nav")
-   .addEventListener("wheel", (event) => {
-      let windowWidth = window.innerWidth;
-      if (windowWidth > 768) {
-         let projects = document.querySelector("#js-projects-container");
-         let buttons = document.querySelectorAll(".c-button-projects-pages");
-         if (event.deltaY > 0) {
-            projects.scrollBy(0, 700);
-            if (buttons[0].classList.contains("u-current-page")) {
-               buttons[0].classList.toggle("u-current-page");
-               buttons[1].classList.toggle("u-current-page");
-            } else if (buttons[1].classList.contains("u-current-page")) {
-               buttons[1].classList.toggle("u-current-page");
-               buttons[2].classList.toggle("u-current-page");
-            }
-         } else {
-            projects.scrollBy(0, -700);
-            if (buttons[2].classList.contains("u-current-page")) {
-               buttons[2].classList.toggle("u-current-page");
-               buttons[1].classList.toggle("u-current-page");
-            } else if (buttons[1].classList.contains("u-current-page")) {
-               buttons[1].classList.toggle("u-current-page");
-               buttons[0].classList.toggle("u-current-page");
-            }
-         }
-      }
+function mouseEnter() {
+   mouseenter = true;
+   console.log("entrou");
+}
+
+function mouseOut() {
+   mouseenter = false;
+   console.log("saiu");
+}
+
+for (let i of project) {
+   i.addEventListener("mouseenter", () => {
+      mouseEnter();
    });
 
-function showText() {
-   let windowWidth = window.innerWidth;
-   if (windowWidth >= 768) {
-      document.querySelector("#js-arrow").style.display = "none";
-      console.log(document.querySelector("#js-arrow").style);
-      setTimeout(() => {
-         document.querySelector("#js-all-projects-text").style.display =
-            "block";
-      }, 150);
-   }
+   i.addEventListener("mouseout", () => {
+      mouseOut();
+   });
 }
 
-function removeText() {
-   let windowWidth = window.innerWidth;
-   if (windowWidth > 768) {
-      setTimeout(() => {
-         document.querySelector("#js-arrow").style.display = "block";
-         document.querySelector("#js-all-projects-text").style.display = "none";
-      }, 150);
-   }
-}
-
-function showTextNav(id) {
-   let windowWidth = window.innerWidth;
-   if (windowWidth > 768) {
-      if (id == 1) {
-         setTimeout(() => {
-            document.querySelector("#js-text-home").style.display = "block";
-         }, 150);
-      } else if (id == 2) {
-         setTimeout(() => {
-            document.querySelector("#js-text-projects").style.display = "block";
-         }, 150);
-      } else if (id == 3) {
-         setTimeout(() => {
-            document.querySelector("#js-text-about").style.display = "block";
-         }, 150);
+setInterval(() => {
+   if (!mouseenter) {
+      if (window.innerWidth < 768) {
+         if (currentProject >= maxProjects) {
+            currentProject = 0;
+            document.querySelector("#js-box").scrollBy(-245 * maxProjects, 0);
+         } else {
+            document.querySelector("#js-box").scrollBy(245, 0);
+            currentProject++;
+         }
+         notMobile = false;
+      } else if (!notMobile) {
+         document.querySelector("#js-box").scrollBy(-900, 0);
+         notMobile = true;
       }
    }
-}
+}, 4000);
 
-function removeTextNav(id) {
-   let windowWidth = window.innerWidth;
-   if (windowWidth > 768) {
-      if (id == 1) {
-         setTimeout(() => {
-            document.querySelector("#js-text-home").style.display = "none";
-         }, 150);
-      } else if (id == 2) {
-         setTimeout(() => {
-            document.querySelector("#js-text-projects").style.display = "none";
-         }, 150);
-      } else if (id == 3) {
-         setTimeout(() => {
-            document.querySelector("#js-text-about").style.display = "none";
-         }, 150);
-      }
+let lastContainer = 0;
+function nextPrevProjects(project) {
+   document.querySelectorAll(".c-group-button-projects").forEach((i) => {
+      i.classList.remove("active");
+   });
+   document.querySelectorAll(".c-group-projects").forEach((i) => {
+      i.classList.remove("active");
+   });
+   if (lastContainer < project) {
+      document
+         .querySelector("#js-box")
+         .scrollBy(900 * (project - lastContainer), 0);
+   } else {
+      document
+         .querySelector("#js-box")
+         .scrollBy(900 * (project - lastContainer), 0);
+   }
+   lastContainer = project;
+
+   if (project == 1) {
+      document.querySelector(".c-projects-1").classList.add("active");
+   } else if (project == 2) {
+      document.querySelector(".c-projects-2").classList.add("active");
    }
 }
