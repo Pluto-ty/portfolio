@@ -159,6 +159,7 @@ button:focus {
    scroll-behavior: smooth;
    max-width: 245px;
    margin: 0 auto;
+   height: 100%;
    gap: 20px;
 }
 
@@ -190,15 +191,18 @@ button:focus {
 }
 
 .c-project {
+   display: grid;
+   grid-template-rows: 170px 1fr;
    min-width: 245px;
    min-height: 414px;
    background: #2fd09a;
    scroll-snap-align: start;
-   max-height: 100%;
+   max-height: 500px;
 }
 
 .c-project img {
    max-height: 172px;
+   min-height: 170px;
 }
 
 .c-projects h2 {
@@ -213,6 +217,7 @@ button:focus {
 
 .c-project img {
    width: 100%;
+   object-fit: cover;
 }
 
 .c-project_content {
@@ -220,7 +225,7 @@ button:focus {
    transition: 0.5s ease-in-out;
    display: flex;
    flex-direction: column;
-   height: 200px;
+   min-height: 220px;
    justify-content: space-between;
 }
 
@@ -235,6 +240,7 @@ button:focus {
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
    align-self: flex-start;
+   text-align: justify;
 }
 
 .c-buttons {
@@ -472,6 +478,10 @@ button:focus {
 
    /* Carrosel - Projects */
 
+   .c-next-prev-projects {
+      display: flex;
+   }
+
    .c-projects {
       background: url("./images/background.svg");
       background-repeat: no-repeat;
@@ -490,7 +500,7 @@ button:focus {
       max-width: 900px;
       margin: 0 auto;
       gap: 20px;
-      height: 445px;
+      height: 460px;
    }
 
    .c-projects h2 {
@@ -506,6 +516,11 @@ button:focus {
       background: #2fd09a;
       scroll-snap-align: start;
       transition: 1s ease-in-out;
+      display: grid;
+      grid-template-rows: 170px 1fr;
+      max-width: 289px;
+      height: 100%;
+      max-height: 100%;
    }
 
    /* About - Footer */
@@ -560,7 +575,7 @@ button:focus {
    }
 
    .c-projects {
-      padding: 100px 80px;
+      padding: 100px 20px;
    }
    .c-box {
       align-items: center;
@@ -576,16 +591,18 @@ button:focus {
       min-width: 28%;
       max-width: 289px;
       min-height: 355px;
-      max-height: 375px;
+      max-height: 400px;
+      height: 100%;
       transition: 0.5s ease-in-out;
       scroll-snap-align: start;
+      overflow: hidden;
    }
 
    .c-project:hover {
       min-width: 29%;
       max-width: 309px;
-      height: 395px;
-      max-height: 395px;
+      height: 420px;
+      max-height: 420px;
    }
    .c-project:hover .c-project_content p {
       font-size: 12.83px;
@@ -604,7 +621,13 @@ button:focus {
       margin-top: 21px;
    }
    .c-project_content {
-      padding: 10px 16px;
+      padding: 15px;
+      transition: 0.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+      max-height: 250px;
+      justify-content: space-between;
    }
 
    .c-project_content p {
@@ -614,7 +637,7 @@ button:focus {
    }
 
    .c-buttons {
-      margin-top: 20px;
+      margin-top: 0px;
       display: flex;
       justify-content: center;
       gap: 30px;
