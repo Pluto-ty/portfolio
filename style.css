@@ -319,11 +319,11 @@ button:focus {
 
 .c-about-content .c-copy {
    display: none;
-   font-size: 8px;
-   border: 1px solid #2fd09a;
-   padding: 4px;
-   width: 31px;
-   margin-top: 0px;
+   font-size: 12px;
+   background: #2fd09a;
+   padding: 2px 8px;
+   color: #13192c;
+   font-family: "Montserrat", sans-serif;
 }
 
 .c-about-content a {
