@@ -24,7 +24,7 @@
 </p>
 
 <h4 align="center">
-	🚀 Completo 🚀
+	🚀 Em andamento 🚀
 </h4>
 
 <p align="center">
