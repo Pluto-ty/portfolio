@@ -677,7 +677,7 @@ button:focus {
    .c-about {
       display: flex;
       height: 429px;
-      padding: 0 0 0 62px;
+      padding: 0 0 0 0px;
       background: #13192c;
       max-width: 1010px;
       margin: 0 auto;
@@ -685,9 +685,9 @@ button:focus {
 
    .c-about-img {
       display: block;
-      max-width: 310px;
-      height: 493px;
-      margin-top: -64px;
+      max-width: 452px;
+      max-height: 563px;
+      margin-top: -104px;
    }
 
    .c-about-content {
