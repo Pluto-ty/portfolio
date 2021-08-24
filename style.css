@@ -30,7 +30,7 @@ button {
 }
 
 .c-container-geral {
-   max-width: 1600px;
+   max-width: 1920px;
    margin: 0 auto;
 }
 
@@ -694,7 +694,7 @@ button:focus {
       height: 429px;
       padding: 0 0 0 0px;
       background: #13192c;
-      max-width: 1600px;
+      max-width: 1920px;
       width: 100%;
       margin: 0 auto;
    }
