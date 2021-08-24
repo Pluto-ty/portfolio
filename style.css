@@ -29,6 +29,12 @@ button {
    cursor: pointer;
 }
 
+.c-container-geral {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+/* About */
 .c-container {
    padding: 20px 38px 0 38px;
    width: 100%;
@@ -36,7 +42,7 @@ button {
    margin-bottom: 30px;
    position: relative;
    display: flex;
-   justify-content: center;
+   justify-content: start;
    align-items: center;
    max-width: 1600px;
 }
@@ -65,7 +71,6 @@ h3 {
    font-family: "Montserrat", sans-serif;
 }
 
-/* About */
 .c-logo {
    margin: 0 auto;
    height: 20px;
@@ -305,7 +310,8 @@ button:focus {
    background: #13192c;
 }
 
-.c-about-img {
+.c-details-1,
+.c-details-2 {
    display: none;
 }
 
@@ -470,6 +476,12 @@ button:focus {
       margin-bottom: 50px;
    }
 
+   .c-container .c-container-content {
+      max-width: 1010px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
    .c-name {
       font-size: 30px;
    }
@@ -583,8 +595,10 @@ button:focus {
 
 @media (min-width: 920px) {
    .c-container {
-      padding: 20px 0px 0 0px;
+      padding: 20px 0px 0 20px;
+      margin: 0 auto;
    }
+
    .c-skills-container {
       display: flex;
       flex-direction: row;
@@ -598,7 +612,7 @@ button:focus {
    }
 
    .c-projects {
-      padding: 100px 20px;
+      padding: 100px 20px 0 20px;
    }
    .c-box {
       align-items: center;
@@ -669,29 +683,44 @@ button:focus {
 
    /* Footer */
    .c-about-container {
-      padding: 0 0 88px 0;
+      overflow: hidden;
+      padding: 100px 0 127px 0;
       background: #f2f2f2;
-      margin-bottom: 95px;
    }
 
    .c-about {
+      position: relative;
       display: flex;
       height: 429px;
       padding: 0 0 0 0px;
       background: #13192c;
-      max-width: 1010px;
+      max-width: 1600px;
+      width: 100%;
       margin: 0 auto;
    }
 
-   .c-about-img {
+   .c-details-1,
+   .c-details-2 {
       display: block;
-      max-width: 452px;
-      max-height: 563px;
-      margin-top: -104px;
+      position: absolute;
+      width: 495px;
+      height: 555px;
+   }
+
+   .c-details-1 {
+      left: -136px;
+      top: -84px;
+   }
+
+   .c-details-2 {
+      right: -116px;
+      top: 99px;
    }
 
    .c-about-content {
       padding: 50px 55px;
+      max-width: 640px;
+      margin: 0 auto;
    }
 
    .c-about-content h2 {
