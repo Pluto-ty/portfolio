@@ -130,38 +130,18 @@ button:focus {
    margin-bottom: 20px;
 }
 
-.c-skills h2 {
-   font-size: 15px;
-   font-weight: 700;
-}
-
-.c-skills-name {
-   font-size: 9px;
-   margin-bottom: 2px;
-}
-
-.c-progress-bar {
-   width: 113.92px;
-   height: 12.72px;
-   background: white;
-   margin-bottom: 5px;
-   padding: 1px;
-   display: flex;
-   gap: 1px;
-}
-
-.c-rect {
-   background: #2fd09a;
-   width: 10.07px;
-   height: 10.6px;
-}
-
-/* learning */
-
+.c-skills h2,
 .c-learning h2 {
    font-size: 15px;
    font-weight: 700;
 }
+
+.c-skills svg,
+.c-learning svg {
+   width: 40px;
+}
+
+/* learning */
 
 /* Projects */
 
@@ -331,6 +311,7 @@ button:focus {
    display: flex;
    align-items: center;
    height: 10px;
+   margin-bottom: 10px;
 }
 
 .c-email a {
@@ -415,12 +396,12 @@ button:focus {
 
    .c-skills-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 30px;
    }
 
    .c-skills {
-      margin-bottom: 50px;
+      margin-bottom: 0px;
    }
 
    .c-skills h2,
@@ -428,27 +409,6 @@ button:focus {
       font-size: 25px;
       font-weight: 700;
       margin-bottom: 10px;
-   }
-
-   .c-skills-name {
-      font-size: 15px;
-      margin-bottom: 2px;
-   }
-
-   .c-progress-bar {
-      width: 215.24px;
-      height: 24px;
-      background: white;
-      margin-bottom: 5px;
-      padding: 2px;
-      display: flex;
-      gap: 2px;
-   }
-
-   .c-rect {
-      background: #2fd09a;
-      width: 19px;
-      height: 20px;
    }
 }
 
@@ -476,10 +436,10 @@ button:focus {
       margin-bottom: 50px;
    }
 
-   .c-container .c-container-content {
+   .c-container-content {
       max-width: 1010px;
       width: 100%;
-      margin: 0 auto;
+      margin: 0 auto 140px auto;
    }
 
    .c-name {
@@ -502,17 +462,19 @@ button:focus {
       line-height: 20px;
       max-width: 600px;
    }
+   .c-projects-button {
+      margin: 30px 0 70px 202px;
+      padding: 10px 22px;
+      font-size: 18px;
+   }
 
    .c-skills-container {
-      display: flex;
-      flex-direction: row;
       gap: 50px;
    }
 
-   .c-projects-button {
-      margin: 30px 0 157px 202px;
-      padding: 10px 22px;
-      font-size: 18px;
+   .c-skills svg,
+   .c-learning svg {
+      width: 60px;
    }
 
    /* Carrosel - Projects */
@@ -601,8 +563,8 @@ button:focus {
 
    .c-skills-container {
       display: flex;
-      flex-direction: row;
-      gap: 134px;
+      flex-direction: column;
+      gap: 30px;
    }
 
    /* Projects - Carrosel */

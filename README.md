@@ -47,15 +47,11 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 
 <p align=""> Clique no link para ver a aplicação rodando no seu navegador <a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>  </p>
 
-
-
-
-
 <h2 align="center"> 🚀 Projeto </h2>
 
 <h4 align="center"> Mobile </h4>
   <p align="center";>
-   	<img src="./assets/readme/web.PNG"/>
+   	<img src="./assets/readme/web.gif"/>
   </p>
 
 <h4 align="center"> Web </h4>
