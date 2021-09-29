@@ -128,6 +128,9 @@ button:focus {
 
 .c-skills {
    margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 
 .c-skills h2,
