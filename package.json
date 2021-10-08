@@ -1,0 +1,25 @@
+{
+   "name": "portfolio",
+   "version": "1.0.0",
+   "description": "<h1 align=\"center\">\r      <a href=\"https://github.com/thyagoaraujom/portfolio\" alt=\"Portfólio\"> Portfólio</a>\r </h1>",
+   "main": "script.js",
+   "scripts": {
+      "dev": "next dev"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Pluto-ty/portfolio.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/Pluto-ty/portfolio/issues"
+   },
+   "homepage": "https://github.com/Pluto-ty/portfolio#readme",
+   "dependencies": {
+      "next": "^11.1.2",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+   }
+}
