@@ -45,18 +45,18 @@ Este repositório será para o meu portifólio, com meus contatos e todos os meu
 
 <h2 id="--como-executar-o-projeto-" align="center"> 🚀 Como executar o projeto </h2>
 
-<p align=""> Clique no link para ver a aplicação rodando no seu navegador <a href="https://thyagoaraujom.github.io/portfolio/" > Site </a>  </p>
+<p align=""> Clique no link para ver a aplicação rodando no seu navegador <a href="https://thyago-araujo.vercel.app" > Site </a>  </p>
 
 <h2 align="center"> 🚀 Projeto </h2>
 
 <h4 align="center"> Mobile </h4>
   <p align="center";>
-   	<img src="./assets/readme/web.gif"/>
+   	<img src="./public/assets/readme/web.gif"/>
   </p>
 
 <h4 align="center"> Web </h4>
 <p align="center" style="display: flex; justify-content: center;">
-  <img src="./assets/readme/mobile.gif"/>
+  <img src="./public/assets/readme/mobile.gif"/>
 </p>
 
 ---
