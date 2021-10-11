@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import Head from "next/head";
 let notMobile = true;
 let currentProject = 0;
 let maxProjects;
@@ -43,7 +43,7 @@ function Home() {
 
    return (
       <div>
-         <head>
+         <Head>
             <meta charset='UTF-8' />
             <meta http-equiv='X-UA-Compatible' content='IE=edge' />
             <meta
@@ -60,13 +60,9 @@ function Home() {
                href='https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat&display=swap'
                rel='stylesheet'
             />
-            <link
-               rel='shortcut icon'
-               href='./images/Logo.ico'
-               type='image/x-icon'
-            />
+            <link rel='icon' href='/images/Logo.svg' />
             <title>Thyago Araujo Portfólio</title>
-         </head>
+         </Head>
          <body>
             <div className='c-container-geral'>
                <div className='c-container'>
