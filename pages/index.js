@@ -60,8 +60,12 @@ function Home() {
                href='https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat&display=swap'
                rel='stylesheet'
             />
-
-            <title>Document</title>
+            <link
+               rel='shortcut icon'
+               href='./images/Logo.ico'
+               type='image/x-icon'
+            />
+            <title>Thyago Araujo Portfólio</title>
          </head>
          <body>
             <div className='c-container-geral'>
