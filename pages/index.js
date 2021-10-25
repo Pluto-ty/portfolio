@@ -180,6 +180,32 @@ function Home() {
                      <div className='c-project'>
                         <img
                            className='c-project-img'
+                           src='./images/projects/Next-Level-Week-Heat.gif'
+                           alt=''
+                        />
+                        <div className='c-project_content'>
+                           <div>
+                              <h3>Next Level Week Heat</h3>
+                              <p>
+                                 Uma aplicação de login e autenticação com
+                                 github para o envio e recebimento de mensagem
+                                 em tempo real.
+                              </p>
+                           </div>
+                           <div className='c-buttons'>
+                              <a
+                                 target='_blank'
+                                 href='https://github.com/ThyagoAraujoM/Next-Level-Week-Heat'>
+                                 <button target='_blank' className='btn-git'>
+                                    GITHUB
+                                 </button>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div className='c-project bg-2'>
+                        <img
+                           className='c-project-img'
                            src='./images/projects/devfinance.png'
                            alt=''
                         />
@@ -212,7 +238,7 @@ function Home() {
                            </div>
                         </div>
                      </div>
-                     <div className='c-project bg-2'>
+                     <div className='c-project '>
                         <img
                            className='c-project-img'
                            src='./images/projects/fancy-border-radius.png'
@@ -275,7 +301,7 @@ function Home() {
                            </div>
                         </div>
                      </div>
-                     <div className='c-project'>
+                     <div className='c-project bg-2'>
                         <img
                            className='c-project-img'
                            src='./images/projects/spliter.png'
@@ -306,7 +332,7 @@ function Home() {
                            </div>
                         </div>
                      </div>
-                     <div className='c-project bg-2'>
+                     <div className='c-project '>
                         <img
                            className='c-project-img'
                            src='./images/projects/wildbeast.png'
@@ -331,37 +357,6 @@ function Home() {
                               <a
                                  target='_blank'
                                  href='https://github.com/ThyagoAraujoM/Wildbeast'>
-                                 <button className='btn-git'>GITHUB</button>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div className='c-project'>
-                        <img
-                           className='c-project-img'
-                           src='./images/project1.jpg'
-                           alt=''
-                        />
-                        <div className='c-project_content'>
-                           <div>
-                              <h3>FlexBox</h3>
-                              <p>
-                                 Flexbox é um template feito para trinar flexbox
-                                 como o próprio nome diz, feito com todos os
-                                 seus princípios de flexibilidade para criar um
-                                 layout responsivo para todos os tipos de
-                                 dispositivos.
-                              </p>
-                           </div>
-                           <div className='c-buttons'>
-                              <a
-                                 target='_blank'
-                                 href='https://thyagoaraujom.github.io/FlexBlog/'>
-                                 <button className='btn-site'>SITE</button>
-                              </a>
-                              <a
-                                 target='_blank'
-                                 href='https://github.com/ThyagoAraujoM/FlexBlog'>
                                  <button className='btn-git'>GITHUB</button>
                               </a>
                            </div>
