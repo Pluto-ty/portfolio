@@ -159,7 +159,10 @@ function Home() {
                               <p>
                                  Uma aplicação de login e autenticação com
                                  github para o envio e recebimento de mensagem
-                                 em tempo real.
+                                 em tempo real. Utilizando React, Typescript,
+                                 Sass, Axios e Socket IO para o Front-End,
+                                 Prisma, Express e JWT no Back-End, React
+                                 Native, Expo e Moti no mobile.
                               </p>
                            </div>
                            <div className='c-buttons'>
