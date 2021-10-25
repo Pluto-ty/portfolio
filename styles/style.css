@@ -132,6 +132,11 @@ button:focus {
    flex-direction: column;
    gap: 10px;
 }
+.c-skills div,
+.c-learning div {
+   display: flex;
+   gap: 7px;
+}
 
 .c-skills h2,
 .c-learning h2 {
@@ -144,7 +149,10 @@ button:focus {
    width: 40px;
 }
 
-/* learning */
+.c-skills img,
+.c-learning img {
+   width: 60px;
+}
 
 /* Projects */
 
