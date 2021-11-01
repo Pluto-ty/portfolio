@@ -234,28 +234,23 @@ function Home() {
               <div className='c-project'>
                 <img
                   className='c-project-img'
-                  src='./images/projects/faq.png'
+                  src='./images/projects/e-diarista.gif'
                   alt=''
                 />
                 <div className='c-project_content'>
                   <div>
-                    <h3>FAQ Template</h3>
+                    <h3>E-diaristas</h3>
                     <p>
-                      Este projeto é um template básico de um FAQ baseado do
-                      site FrontendMentor, dele temos que recriar o design o
-                      mais fielmente possível ao protótipo recebido e que esteja
-                      responsivo para maioria dos dispositivos.
+                      E-diaristas é um projeto simples com react e react native
+                      com uma página que consume uma api e depois renderiza na
+                      tela os dados recebidos. O uso da aplicação é para
+                      procurar diaristas disponíveis na região.
                     </p>
                   </div>
                   <div className='c-buttons'>
                     <a
                       target='_blank'
-                      href='https://thyagoaraujom.github.io/Praticando-templates/iniciante/faq-accordion-card-main/index.html'>
-                      <button className='btn-site'>SITE</button>
-                    </a>
-                    <a
-                      target='_blank'
-                      href='https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/faq-accordion-card-main'>
+                      href='https://github.com/ThyagoAraujoM/E-diaristas'>
                       <button className='btn-git'>GITHUB</button>
                     </a>
                   </div>
