@@ -170,30 +170,33 @@ function Home() {
               <div className='c-project bg-2'>
                 <img
                   className='c-project-img'
-                  src='./images/projects/devfinance.png'
+                  src='./images/projects/move-it.gif'
                   alt=''
                 />
                 <div className='c-project_content'>
                   <div>
-                    <h3>Dev$finance</h3>
+                    <h3>Move it</h3>
                     <p>
-                      Dev$finance é um projeto feito durante uma maratona da
-                      Rocketseat, utilizando Html, Css e Javascript e sua função
-                      é ajudar na organização de gastos mensais, tudo utilizando
-                      LocalStorage para não perder os dados.
+                      O move.it é um app que une a técnica de Pomodoro com a
+                      realização de exercícios físicos para quem passa muito
+                      tempo na frente do computador. Contando com um sistema de
+                      armazenamento local para caso o usuário não queria logar,
+                      e um armazenamento na nuvem com firebase, utilizando a
+                      autenticação com o google. Criado com React, Firebase,
+                      TypeScript, Material-UI.
                     </p>
                   </div>
                   <div className='c-buttons'>
                     <a
                       target='_blank'
-                      href='https://thyagoaraujom.github.io/Dev-finance'>
+                      href='https://move-it-three-omega.vercel.app'>
                       <button target='_blank' className='btn-site'>
                         SITE
                       </button>
                     </a>
                     <a
                       target='_blank'
-                      href='https://github.com/ThyagoAraujoM/Dev-finance'>
+                      href='https://github.com/ThyagoAraujoM/move-it'>
                       <button target='_blank' className='btn-git'>
                         GITHUB
                       </button>
@@ -259,29 +262,33 @@ function Home() {
               <div className='c-project bg-2'>
                 <img
                   className='c-project-img'
-                  src='./images/projects/spliter.png'
+                  src='./images/projects/devfinance.png'
                   alt=''
                 />
                 <div className='c-project_content'>
                   <div>
-                    <h3>Splitter</h3>
+                    <h3>Dev$finance</h3>
                     <p>
-                      Slitter é um aplicativo para calculo de gorjeta, com o
-                      calculo em si, uma área para valores da gorjeta escolhida
-                      pelo usuário e um botão para zerar tudo, outro projeto
-                      baseado do site FrontendMentor.
+                      Dev$finance é um projeto feito durante uma maratona da
+                      Rocketseat, utilizando Html, Css e Javascript e sua função
+                      é ajudar na organização de gastos mensais, tudo utilizando
+                      LocalStorage para não perder os dados.
                     </p>
                   </div>
                   <div className='c-buttons'>
                     <a
                       target='_blank'
-                      href='https://thyagoaraujom.github.io/Praticando-templates/iniciante/tip-calculator-app-main/index.html'>
-                      <button className='btn-site'>SITE</button>
+                      href='https://thyagoaraujom.github.io/Dev-finance'>
+                      <button target='_blank' className='btn-site'>
+                        SITE
+                      </button>
                     </a>
                     <a
                       target='_blank'
-                      href='https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/tip-calculator-app-main'>
-                      <button className='btn-git'>GITHUB</button>
+                      href='https://github.com/ThyagoAraujoM/Dev-finance'>
+                      <button target='_blank' className='btn-git'>
+                        GITHUB
+                      </button>
                     </a>
                   </div>
                 </div>
@@ -289,29 +296,28 @@ function Home() {
               <div className='c-project '>
                 <img
                   className='c-project-img'
-                  src='./images/projects/fancy-border-radius.png'
+                  src='./images/projects/quiz.gif'
                   alt=''
                 />
                 <div className='c-project_content'>
                   <div>
-                    <h3>Fancy Border Radius</h3>
+                    <h3>Quiz</h3>
                     <p>
-                      Fancy Border radius é um projeto baseado em um dos
-                      desafios do repositório App Ideas no github. Nele temos
-                      que criar uma interface que o usuário possa modificar o
-                      border-radius do elemento a vontade e conseguir copia-lo
-                      pronto para usar no seu projeto.
+                      Um aplicação onde o usuário decide quantas perguntas
+                      deseja responder, de temas e dificuldades aleatórias, após
+                      responder o usuário pode ver o resultado e decidir de
+                      salvar o questionário para se quiser rever o resultado
+                      outra hora. Utilizando React, TypeScript, Formik, Axios e
+                      Material-UI para a construção da aplicação.
                     </p>
                   </div>
                   <div className='c-buttons'>
-                    <a
-                      target='_blank'
-                      href='https://thyagoaraujom.github.io/Praticando-templates/iniciante/Border-radius-Previewer/index.html'>
+                    <a target='_blank' href='https://quiz-ty.vercel.app'>
                       <button className='btn-site'>SITE</button>
                     </a>
                     <a
                       target='_blank'
-                      href='https://github.com/ThyagoAraujoM/Praticando-templates/tree/main/iniciante/Border-radius-Previewer'>
+                      href='https://github.com/ThyagoAraujoM/Quiz'>
                       <button className='btn-git'>GITHUB</button>
                     </a>
                   </div>
@@ -329,8 +335,8 @@ function Home() {
                   mercado. Já tenho experiência na criação de sites responsivos
                   e estou sempre buscando aprender novas ferramentas para
                   melhorar o meu trabalho, com 40+ horas em cursos e 100+ horas
-                  em prática. Atualmente estou focando meus estudos em
-                  back-ending com Node e React.
+                  em prática. Atualmente estou focando meus estudos em criação
+                  de aplicações com React, Typescript e Node.
                 </p>
                 <p>
                   Você pode encontrar mais sobre meus projetos e minha rotina de
